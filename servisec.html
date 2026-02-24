@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digibuzz - Digital Marketing Agency</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                   <img class="logo_imag" src="images/logo.png">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About us</a>
+                    <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <button class="btn btn-primary">
+                    <a href="contact.html">Get Started</a>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main id="services" class="page-section">
+        <div class="page-header">
+            <div class="container anim-hidden anim-up">
+                <h1>Our Services</h1>
+                <p>Comprehensive solutions for your business.</p>
+            </div>
+        </div>
+
+        <section class="section-padding">
+            <div class="container grid-3">
+                <!-- Service Cards -->
+                <div class="card anim-hidden anim-up">
+                    <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Digital Marketing</h3>
+                    <p style="color:var(--text-gray)">SEO, PPC, and Social Media campaigns that convert.</p>
+                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
+                </div>
+                <div class="card anim-hidden anim-up">
+                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p style="color:var(--text-gray)">Custom sites built on WordPress, React, or HTML5.</p>
+                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
+                </div>
+                <div class="card anim-hidden anim-up">
+                    <div class="icon-box"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Graphic Design</h3>
+                    <p style="color:var(--text-gray)">Logos, branding, and UI designs that stand out.</p>
+                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
+                </div>
+                <div class="card anim-hidden anim-up">
+                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>App Development</h3>
+                    <p style="color:var(--text-gray)">iOS and Android applications for your startup.</p>
+                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
+                </div>
+                <div class="card anim-hidden anim-up">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <h3>SEO Optimization</h3>
+                    <p style="color:var(--text-gray)">Rank #1 on Google with our white-hat strategies.</p>
+                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
+                </div>
+                <div class="card anim-hidden anim-up">
+                    <div class="icon-box"><i class="fas fa-headset"></i></div>
+                    <h3>Consultancy</h3>
+                    <p style="color:var(--text-gray)">Expert advice to scale your digital business.</p>
+                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

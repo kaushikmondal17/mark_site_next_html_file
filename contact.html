@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digibuzz - Digital Marketing Agency</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                   <img class="logo_imag" src="images/logo.png">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About us</a>
+                    <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <button class="btn btn-primary">
+                    <a href="contact.html">Get Started</a>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contact" class="page-section">
+        <div class="page-header">
+            <div class="container anim-hidden anim-up">
+                <h1>Contact Us</h1>
+                <p>Let's start a conversation.</p>
+            </div>
+        </div>
+        <section class="section-padding">
+            <div class="container grid-2">
+                <!-- Contact Info -->
+                <div class="anim-hidden anim-left">
+                    <h2>Get In Touch</h2>
+                    <p style="color:var(--text-gray); margin-bottom:30px;">
+                        Have a project in mind? We'd love to hear from you. Fill out the form or visit us at our office.
+                    </p>
+                    
+                    <div class="card" style="margin-bottom:20px; display:flex; align-items:center; gap:20px;">
+                        <div class="icon-box" style="margin-bottom:0;"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p style="color:var(--text-gray)">123 Business Street, New York, USA</p>
+                        </div>
+                    </div>
+                     <div class="card" style="margin-bottom:20px; display:flex; align-items:center; gap:20px;">
+                        <div class="icon-box" style="margin-bottom:0;"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p style="color:var(--text-gray)">info@marknextmedia.com</p>
+                        </div>
+                    </div>
+                     <div class="card" style="margin-bottom:20px; display:flex; align-items:center; gap:20px;">
+                        <div class="icon-box" style="margin-bottom:0;"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p style="color:var(--text-gray)">+1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card contact-form anim-hidden anim-right">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

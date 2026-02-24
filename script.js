@@ -1,0 +1,113 @@
+// Scroll Reveal Animation
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach(element => {
+    const windowHeight = window.innerHeight;
+    const revealTop = element.getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (revealTop < windowHeight - revealPoint) {
+      element.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+
+
+
+
+        // 1. Page Navigation System (SPA)
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-section');
+            pages.forEach(page => {
+                page.classList.remove('active-page');
+            });
+
+            // Remove active class from nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Show selected page
+            const selectedPage = document.getElementById(pageId);
+            if(selectedPage) {
+                selectedPage.classList.add('active-page');
+                window.scrollTo(0, 0); // Scroll to top
+            }
+
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('navLinks');
+            mobileMenu.classList.remove('active');
+        }
+
+        // 2. Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // 3. FAQ Accordion
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            content.classList.toggle('open');
+            const icon = element.querySelector('i');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+
+        // 4. Scroll Animation Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('anim-visible');
+                    // Stop observing once visible to prevent re-animating
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Apply observer to all elements with animation classes
+        // Re-run this when page changes or initially
+        function initAnimations() {
+            const animatedElements = document.querySelectorAll('.anim-hidden');
+            animatedElements.forEach(el => observer.observe(el));
+        }
+
+        // Run animations on load
+        document.addEventListener('DOMContentLoaded', initAnimations);
+        
+        // Re-trigger animation check when changing pages (optional hack for SPA)
+        const buttons = document.querySelectorAll('a, button');
+        buttons.forEach(btn => btn.addEventListener('click', () => {
+            setTimeout(initAnimations, 100);
+        }));
+
+
+        // about
+
+        // Function to handle scroll animations
+function reveal() {
+    // Select all elements with reveal classes
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+    for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150; // Distance before it appears
+
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+    }
+}
+
+// Event listener for scroll
+window.addEventListener("scroll", reveal);
+
+// Trigger once on load to show elements already in view
+window.addEventListener("load", reveal);
