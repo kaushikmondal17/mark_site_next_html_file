@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digibuzz - Digital Marketing Agency</title>
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
-  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -18,70 +22,313 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                   <img class="logo_imag" src="images/logo.png">
+                    <!-- <img class="logo_imag" src="images/logo.png"> -->
                 </div>
-                <div class="nav-links">
+                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="about.html">About us</a>
                     <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
                     <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="faq.html">FAQ</a>
                     <a href="contact.html">Contact</a>
                 </div>
-                <button class="btn btn-primary">
-                    <a href="contact.html">Get Started</a>
-                </button>
+                <button class="btn btn-primary">Get Started</button>
             </nav>
         </div>
     </header>
-    <main id="services" class="page-section">
-        <div class="page-header">
-            <div class="container anim-hidden anim-up">
-                <h1>Our Services</h1>
-                <p>Comprehensive solutions for your business.</p>
+
+    
+    <!-- Hero -->
+    <section class="srv-hero-section">
+        <div class="srv-container">
+            <div class="srv-hero-card srv-reveal-left">
+                <h1>Services</h1>
+                <p>Our mission is to help the entire world do business online.</p>
             </div>
         </div>
+    </section>
 
-        <section class="section-padding">
-            <div class="container grid-3">
-                <!-- Service Cards -->
-                <div class="card anim-hidden anim-up">
-                    <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
-                    <h3>Digital Marketing</h3>
-                    <p style="color:var(--text-gray)">SEO, PPC, and Social Media campaigns that convert.</p>
-                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
-                </div>
-                <div class="card anim-hidden anim-up">
-                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Web Development</h3>
-                    <p style="color:var(--text-gray)">Custom sites built on WordPress, React, or HTML5.</p>
-                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
-                </div>
-                <div class="card anim-hidden anim-up">
-                    <div class="icon-box"><i class="fas fa-pen-nib"></i></div>
-                    <h3>Graphic Design</h3>
-                    <p style="color:var(--text-gray)">Logos, branding, and UI designs that stand out.</p>
-                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
-                </div>
-                <div class="card anim-hidden anim-up">
-                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>App Development</h3>
-                    <p style="color:var(--text-gray)">iOS and Android applications for your startup.</p>
-                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
-                </div>
-                <div class="card anim-hidden anim-up">
-                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
-                    <h3>SEO Optimization</h3>
-                    <p style="color:var(--text-gray)">Rank #1 on Google with our white-hat strategies.</p>
-                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
-                </div>
-                <div class="card anim-hidden anim-up">
-                    <div class="icon-box"><i class="fas fa-headset"></i></div>
-                    <h3>Consultancy</h3>
-                    <p style="color:var(--text-gray)">Expert advice to scale your digital business.</p>
-                    <a onclick="showPage('contact')" style="color:var(--primary); margin-top:10px; display:block;">Get Started &rarr;</a>
+    <!-- Intro Section -->
+    <section class="srv-container">
+        <div class="srv-intro-flex">
+            <div class="srv-intro-content srv-reveal-left">
+                <span class="srv-label">OUR VALUES</span>
+                <h2 class="srv-h2">Making your business a success with cutting edge technology.</h2>
+                <p class="srv-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <a href="#" class="srv-btn-teal">DISCOVER MORE</a>
+            </div>
+            <div class="srv-intro-image-area srv-reveal-right">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" class="srv-intro-img" alt="Woman working">
+                <div class="srv-badge">
+                    <span style="color:#008fa1">✔</span> 100% Trusted Digital Agency
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+
+       <!-- SERVICES GRID -->
+    <section class="section-padding we_offer_section">
+        <img class="services_bg" src="images/bg_img_line.png" />
+        <div class="container">
+            <div class="text-center srv-reveal-right">
+                <span class="badge">What We Offer</span>
+                <h2>What we bring to your brand party</h2>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card srv-reveal-leftd">
+                    <img class="services_card_images" src="images/9-1.png" />
+                    <h4>Website Development and Design</h4>
+                    <p>Clean, fast, aesthetic websites that tell your story, build trust, and guide visitors smoothly
+                        toward taking action, making inquiries, or becoming loyal customers.</p>
+                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                        MORE</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="card srv-reveal-left">
+                    <img class="services_card_images" src="images/9-1.png" />
+                    <h4>Web 3 Development</h4>
+                    <p>Future-ready digital experiences built on blockchain, smart contracts, and decentralized systems.
+                        We help brands step into Web 3 with clarity, creativity, and real-world use cases.</p>
+                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                        MORE</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="card srv-reveal-right">
+                    <img class="services_card_images" src="images/9-1.png" />
+                    <h4>SEO (Search Engine Optimisation)</h4>
+                    <p>Ranking on Google isn’t luck. We optimize your website structure, content, and keywords so your
+                        brand shows up when people are actively searching for what you offer.</p>
+                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                        MORE</a>
+                </div>
+                <!-- Card 4 -->
+                <div class="card srv-reveal-right">
+                     <img class="services_card_images" src="images/9-1.png" />
+                    <h4>Social Media Management</h4>
+                    <p>From strategy to posting, we help your brand stay consistent, relevant, and relatable while
+                        building engagement, growing your audience, and turning followers into real customers.</p>
+                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                        MORE</a>
+                </div>
+                <!-- Card 5 -->
+                <div class="card srv-reveal-right">
+                    <img class="services_card_images" src="images/9-1.png" />
+                    <h4>Lead Generation & Digital Ads</h4>
+                    <p>We run smart ad campaigns that reach the right audience, attract high-intent leads, and turn
+                        clicks into real inquiries, bookings, and consistent business growth.</p>
+                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                        MORE</a>
+                </div>
+                <!-- Card 6 -->
+                <div class="card srv-reveal-right">
+                     <img class="services_card_images" src="images/9-1.png" />
+                    <h4>Content Marketing</h4>
+                    <p>Content that feels human, not robotic. From blogs to brand storytelling, we create words that
+                        build trust, spark interest, and turn readers into customers.</p>
+                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                        MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- STATS SECTION -->
+    <section class="section-padding stats-section">
+        <div class="container text-center srv-reveal-right">
+            <h2>We create sales, leads, and new business opportunities for our clients.</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> -->
+            <button class="btn btn-primary">Discover More</button>
+
+            <div class="stats-grid srv-reveal-left">
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>PProjects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>40+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4.8</h3>
+                    <p>Client Ratings</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2+ </h3>
+                    <p>Years in the Game</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- WHY CHOOSE US -->
+    <section class="section-padding why_choose_section" style="background:#18181b">
+        <div class="container animate-on-scroll">
+            <div class="text-center">
+                <span class="badge">Why Choose Us</span>
+                <h2>Digital marketing that actually drives sales, not just likes
+                </h2>
+            </div>
+            <div class="cards-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="wide-card">
+                    <img src="images/17.png" />
+                    <div class="wide-card-content">
+                        <h4>Enterprise-Level Security
+                        </h4>
+                        <p>Your data and brand assets stay safe and protected.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wide-card">
+                    <img src="images/17.png" />
+                    <div class="wide-card-content">
+                        <h4>Global Scalability
+
+                        </h4>
+                        <p>We build systems that grow with your brand, not limit it.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wide-card">
+                    <img src="images/17.png" />
+                    <div class="wide-card-content">
+                        <h4>Easy Payments
+
+                        </h4>
+                        <p>Smooth and transparent payment options—no awkward surprises.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wide-card">
+                    <img src="images/17.png" />
+                    <div class="wide-card-content">
+                        <h4>Dedicated Onboarding Team
+                        </h4>
+                        <p>We guide you step-by-step so you never feel lost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="srv-container srv-testimonial-section">
+        <div class="srv-quote-icon srv-reveal-left">"</div>
+        <div class="srv-testimonial-flex">
+            <div class="srv-testi-card srv-reveal-left">
+                "Parturient blandit posuere rutrum montes dui purus. Justo lobortis mi phasellus imperdiet tristique eget augue penatibus. Magna quis eleifend facilisi vitae neque est risus diam ac urna."
+                <div class="srv-user">
+                    <img src="https://i.pravatar.cc/100?u=1" alt="user">
+                    <span><strong>McKenna Dash</strong></span>
+                </div>
+            </div>
+            <div class="srv-testi-card srv-reveal-right">
+                "Parturient blandit posuere rutrum montes dui purus. Justo lobortis mi phasellus imperdiet tristique eget augue penatibus. Magna quis eleifend facilisi vitae neque est risus diam ac urna."
+                <div class="srv-user">
+                    <img src="https://i.pravatar.cc/100?u=2" alt="user">
+                    <span><strong>McKenna Dash</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <div class="cta_section ">
+        <div class="container">
+            <div class="cta-box srv-reveal-right">
+                <h2>Grow your brand with Mark Next Media
+                </h2>
+                <p style="color:#cbd5e1; margin-bottom:30px;">Smart strategy. Clean design. Content that hits. Marketing
+                    that works.
+                </p>
+                <div class="button_book srv-reveal-left">
+                    <a class="btn_Book">Book a Call
+                    </a>
+                    <a class="btn_start">Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom:20px;">
+                        <img class="footer_logo" src="images/logo.png" />
+                    </div>
+                    <p>Mark Next Media is a creative-first digital agency built to help brands stand out online. From
+                        websites to social media to performance marketing, we turn ideas into digital impact.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Web Developing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Send Ticket</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Article & News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top:1px solid #222; padding-top:20px; display:flex; justify-content:space-between; color:#666; font-size:0.8rem;">
+                <p>Copyright © 2023 DigiBuzz. All rights reserved.</p>
+                <div>
+                    <a href="#" style="margin-right:15px;">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script>
+    // --- SCROLL ANIMATION JAVASCRIPT ---
+    const srvObserverOptions = {
+        threshold: 0.15
+    };
+
+    const srvObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('srv-visible');
+            }
+        });
+    }, srvObserverOptions);
+
+    // Select all elements to animate
+    document.querySelectorAll('.srv-reveal-left, .srv-reveal-right').forEach(el => {
+        srvObserver.observe(el);
+    });
+</script>
+
 </body>
 </html>
