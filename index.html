@@ -1,491 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digibuzz - Digital Marketing Agency</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digibuzz - Digital Marketing Agency</title>
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-</head>
+            <!-- font awosam -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<body>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="responsive.css" />
+    </head>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <!-- <img class="logo_imag" src="images/logo.png"> -->
-                </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About us</a>
-                    <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <button class="btn btn-primary">Get Started</button>
-            </nav>
-        </div>
-    </header>
+    <body>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="container animate-on-scroll">
-            <h1>Mark Your Brand Next with the Best Digital Marketing Agency in Kolkata</h1>
-            <p>We are Mark Next Media, an AI-driven digital marketing company in India. We blend creativity, strategy,
-                and vibes to help your brand stand out, be remembered, and be chosen. Let’s build your next digital
-                move.</p>
-            <div class="hero-btns">
-                <button class="btn btn-outline">View Our Services</button>
-                <button class="btn btn-primary">Get a Free Audit</button>
-            </div>
-        </div>
-    </section>
+        <!-- HEADER -->
 
-    <!-- LOGO CAROUSEL -->
-    <section class="logos-section ">
-        <div class="container">
-            <h2 class="text-center" style="margin-bottom: 10px;">Join brands that chose growth over guesswork</h2>
-            <p>From startups to scaling brands, we’ve helped businesses turn clicks into real conversations and real
-                revenue.</p>
-            <div class="logos-grid">
-                <span><i class="fab fa-aws"></i> decyber</span>
-                <span><i class="fab fa-google"></i> clicknbuy</span>
-                <span><i class="fab fa-dropbox"></i> contrukta</span>
-                <span><i class="fab fa-slack"></i> eduversita</span>
-                <span><i class="fab fa-spotify"></i> cleanie</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="section-padding about_section">
-        <img class="backgrounde_about" src="images/bg_img_line.png" />
-        <div class="container split-section">
-            <div class="content animate-on-scroll about_contact">
-                <span class="badge">Who We Are</span>
-                <h3>Marketing, Content, Websites. We do it all, without the boring agency energy.</h3>
-                <p>At Mark Next Media, we build brands that people actually remember. We blend strategy, creativity, and
-                    human psychology to craft digital experiences that feel real and drive results. From SEO and PPC to
-                    social media marketing and full-funnel digital campaigns, we help brands get noticed and chosen. If
-                    you’re searching for the top 10 digital marketing companies in Kolkata, your brand is already in the
-                    right place. Your brand has a story; our job is to make the world care.</p>
-                <button class="btn btn-primary">Know Us Better</button>
-            </div>
-            <div class="image-wrapper animate-on-scroll">
-                <div class="year-badge">
-                    <span>2+</span>
-                    <small>Years in the Game</small>
-                </div>
-                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Office Meeting">
-                <div class="photo_text">
-                    <h5>Let’s grow your brand, without the corporate fluff.</h5>
-                    <p>We don’t just run campaigns. We build digital ecosystems that attract, engage, and convert.
-                    </p>
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav>
+                        <div class="wrapper">
+                            <div class="logo"><a href="index.html">
+                                <img src="images/logo.png"/>
+                            </a></div>
+                            <input type="radio" name="slider" id="menu-btn">
+                            <input type="radio" name="slider" id="close-btn">
+                            <ul class="nav-links">
+                                <label for="close-btn" class="btn close-btn"><i
+                                        class="fas fa-times"></i></label>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="servisec.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="blog.html">Post</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li>
+                                    <a href="#" class="desktop-item">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    <label for="showDrop"
+                                        class="mobile-item">Pages</label>
+                                    <ul class="drop-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="about.html">Team</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="singleblog.html">Single Post</a></li>
+                                    </ul>
+                                </li>
+                               <div class="nab_button">
+                                <a class="header_btn" href="contact.html">Get Start</a>
+                               </div>
+                            </ul>
+                             
+                            <label for="menu-btn" class="btn menu-btn"><i
+                                    class="fas fa-bars"></i></label>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- STATS SECTION -->
-    <section class="section-padding stats-section">
-        <div class="container text-center animate-on-scroll">
-            <h2>We create sales, leads, and new business opportunities for our clients.</h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> -->
-            <button class="btn btn-primary">Discover More</button>
-
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>15+</h3>
-                    <p>PProjects Completed</p>
-                </div>
-                <div class="stat-item">
-                    <h3>40+</h3>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="stat-item">
-                    <h3>4.8</h3>
-                    <p>Client Ratings</p>
-                </div>
-                <div class="stat-item">
-                    <h3>2+ </h3>
-                    <p>Years in the Game</p>
+        <!-- HERO Banner  SECTION -->
+        <section class="hero animate-on-scroll">
+            <div class="container ">
+                <h1>Mark Your Brand Next with the Best Digital Marketing Agency
+                    in Kolkata</h1>
+                <p>We are Mark Next Media, an AI-driven digital marketing
+                    company in India. We blend creativity, strategy,
+                    and vibes to help your brand stand out, be remembered, and
+                    be chosen. Let’s build your next digital
+                    move.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-outline">View Our Services</button>
+                    <button class="btn btn-primary">Get a Free Audit</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SERVICES GRID -->
-    <section class="section-padding we_offer_section">
-        <img class="services_bg" src="images/bg_img_line.png" />
-        <div class="container">
-            <div class="text-center animate-on-scroll">
-                <span class="badge">What We Offer</span>
-                <h2>What we bring to your brand party</h2>
-            </div>
-
-            <div class="cards-grid">
-                <!-- Card 1 -->
-                <div class="card animate-on-scroll">
-                    <img class="services_card_images" src="images/9-1.png" />
-                    <h4>Website Development and Design</h4>
-                    <p>Clean, fast, aesthetic websites that tell your story, build trust, and guide visitors smoothly
-                        toward taking action, making inquiries, or becoming loyal customers.</p>
-                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
-                        MORE</a>
-                </div>
-                <!-- Card 2 -->
-                <div class="card animate-on-scroll">
-                    <img class="services_card_images" src="images/9-1.png" />
-                    <h4>Web 3 Development</h4>
-                    <p>Future-ready digital experiences built on blockchain, smart contracts, and decentralized systems.
-                        We help brands step into Web 3 with clarity, creativity, and real-world use cases.</p>
-                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
-                        MORE</a>
-                </div>
-                <!-- Card 3 -->
-                <div class="card animate-on-scroll">
-                    <img class="services_card_images" src="images/9-1.png" />
-                    <h4>SEO (Search Engine Optimisation)</h4>
-                    <p>Ranking on Google isn’t luck. We optimize your website structure, content, and keywords so your
-                        brand shows up when people are actively searching for what you offer.</p>
-                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
-                        MORE</a>
-                </div>
-                <!-- Card 4 -->
-                <div class="card animate-on-scroll">
-                    <i class="fas fa-mobile-alt card-icon"></i>
-                    <h4>Social Media Management</h4>
-                    <p>From strategy to posting, we help your brand stay consistent, relevant, and relatable while
-                        building engagement, growing your audience, and turning followers into real customers.</p>
-                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
-                        MORE</a>
-                </div>
-                <!-- Card 5 -->
-                <div class="card animate-on-scroll">
-                    <i class="fas fa-hashtag card-icon"></i>
-                    <h4>Lead Generation & Digital Ads</h4>
-                    <p>We run smart ad campaigns that reach the right audience, attract high-intent leads, and turn
-                        clicks into real inquiries, bookings, and consistent business growth.</p>
-                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
-                        MORE</a>
-                </div>
-                <!-- Card 6 -->
-                <div class="card animate-on-scroll">
-                    <i class="fas fa-laptop-code card-icon"></i>
-                    <h4>Content Marketing</h4>
-                    <p>Content that feels human, not robotic. From blogs to brand storytelling, we create words that
-                        build trust, spark interest, and turn readers into customers.</p>
-                    <a href="#" style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
-                        MORE</a>
+        <!-- LOGO CAROUSEL -->
+        <section class="logos-section ">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: 10px;">Join brands
+                    that chose growth over guesswork</h2>
+                <p>From startups to scaling brands, we’ve helped businesses turn
+                    clicks into real conversations and real
+                    revenue.</p>
+                <div class="logos-grid">
+                    <span><i class="fab fa-aws"></i> decyber</span>
+                    <span><i class="fab fa-google"></i> clicknbuy</span>
+                    <span><i class="fab fa-dropbox"></i> contrukta</span>
+                    <span><i class="fab fa-slack"></i> eduversita</span>
+                    <span><i class="fab fa-spotify"></i> cleanie</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="section-padding" style="background: #18181b;">
-        <div class="container split-section animate-on-scroll">
-            <div class="testimonial-card">
-                <i class="fas fa-quote-left quote-icon"></i>
-                <p>"Parturient blandit posuere rutrum montes duis purus. Justo lobortis mi phasellus imperdiet tristique
-                    eget augue penatibus."</p>
-                <div class="client-info">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="client-img" alt="User">
-                    <div>
-                        <h5>McKenna Heath</h5>
-                        <small style="color:var(--secondary)">CEO
-                            LOKAMART</small>
+        <!-- ABOUT SECTION -->
+        <section class="section-padding about_section ">
+            <img class="backgrounde_about" src="images/bg_img_line.png" />
+            <div class="container split-section">
+                <div class="content about_contact reveal-left">
+                    <span class="badge">Who We Are</span>
+                    <h3>Marketing, Content, Websites. We do it all, without the
+                        boring agency energy.</h3>
+                    <p>At Mark Next Media, we build brands that people actually
+                        remember. We blend strategy, creativity, and
+                        human psychology to craft digital experiences that feel
+                        real and drive results. From SEO and PPC to
+                        social media marketing and full-funnel digital
+                        campaigns, we help brands get noticed and chosen. If
+                        you’re searching for the top 10 digital marketing
+                        companies in Kolkata, your brand is already in the
+                        right place. Your brand has a story; our job is to make
+                        the world care.</p>
+                    <button class="btn btn-primary">Know Us Better</button>
+                </div>
+                <div class="image-wrapper reveal-right">
+                    <div class="year-badge">
+                        <span>2+</span>
+                        <small>Years in the Game</small>
+                    </div>
+                    <img
+                        src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Office Meeting">
+                    <div class="photo_text">
+                        <h5>Let’s grow your brand, without the corporate
+                            fluff.</h5>
+                        <p>We don’t just run campaigns. We build digital
+                            ecosystems that attract, engage, and convert.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <i class="fas fa-quote-left quote-icon"></i>
-                <p>"Parturient blandit posuere rutrum montes duis purus. Justo lobortis mi phasellus imperdiet tristique
-                    eget augue penatibus."</p>
-                <div class="client-info">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="client-img" alt="User">
-                    <div>
-                        <h5>John Doe</h5>
-                        <small style="color:var(--secondary)">MANAGER</small>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="section-padding stats-section">
+            <div class="container text-center animate-on-scroll">
+                <h2>We create sales, leads, and new business opportunities for
+                    our clients.</h2>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> -->
+                <button class="btn btn-primary">Discover More</button>
+
+                <div class="stats-grid reveal-right">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>PProjects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>40+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.8</h3>
+                        <p>Client Ratings</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2+ </h3>
+                        <p>Years in the Game</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- GREEN SPLIT FEATURE -->
-    <section class="green-split">
-
-        <div class="green-content animate-on-scroll">
-            <img class="green_bg" src="images/bg_img_line.png" />
-            <h3>Feel everything. Create everything. Grow everything.</h3>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> -->
-            <ul class="feature-list">
-                <li>
-                    <i class="fas fa-lightbulb feature-icon"></i>
-                    <div>
-                        <h4>Creative Team</h4>
-                        <p style="margin:0; font-size:0.9rem;">A team of designers, strategists, and marketers who
-                            actually care about your brand.</p>
-                    </div>
-                </li>
-                <li>
-                    <i class="fas fa-rocket feature-icon"></i>
-                    <div>
-                        <h4>Smart Strategies</h4>
-                        <p style="margin:0; font-size:0.9rem;">Data-backed plans mixed with creative thinking so every
-                            move makes sense.</p>
-                    </div>
-                </li>
-                <li>
-                    <i class="fas fa-cog feature-icon"></i>
-                    <div>
-                        <h4>Reliable Execution</h4>
-                        <p style="margin:0; font-size:0.9rem;">Deadlines met, communication clear, and results tracked,
-                            no ghosting.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="green-image">
-            <img
-                src="https://media.istockphoto.com/id/1209793467/photo/crash-tesh-dummy-in-car.jpg?s=612x612&w=0&k=20&c=exV6ExZZ-wIS_lmRicJZf8Xtn8mzDEt4TczkATuqx48=" />
-        </div>
-
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section-padding how_it_work_section ">
-        <div class="container text-center animate-on-scroll">
-            <span class="badge">How It Works</span>
-            <h2>Simple steps. No marketing headaches.</h2>
-            <div class="cards-grid">
-                <div class="process-card">
-                    <i class="far fa-comments fa-2x mb-3" style="color:var(--secondary); margin-bottom:15px;"></i>
-                    <h4>Free Consultation</h4>
-                    <p>We listen, understand your goals, and map out a clear game plan.</p>
-                    <a href="#" class="btn btn-primary"> CHAT NOW</a>
+        <!-- SERVICES GRID -->
+        <section class="section-padding we_offer_section">
+            <img class="services_bg" src="images/bg_img_line.png" />
+            <div class="container">
+                <div class="text-center animate-on-scroll">
+                    <span class="badge">What We Offer</span>
+                    <h2>What we bring to your brand party</h2>
                 </div>
-                <div class="process-card">
-                    <i class="fas fa-list-ul fa-2x mb-3" style="color:var(--secondary); margin-bottom:15px;"></i>
-                    <h4>Choose Your Plan
-                    </h4>
-                    <p>Pick a package that fits your goals and budget—no confusing jargon.
-                    </p>
-                    <a href="#" class="btn btn-primary"> Choose Plan
-                    </a>
-                </div>
-                <div class="process-card">
-                    <i class="fas fa-video fa-2x mb-3" style="color:var(--secondary); margin-bottom:15px;"></i>
-                    <h4>Execution & Growth
-                    </h4>
-                    <p>We build, launch, test, and scale while you focus on your business.
-                    </p>
-                    <a href="#" class="btn btn-primary"> Start Now
-                    </a>
+
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="card reveal-left">
+                        <img class="services_card_images"
+                            src="images/9-1.png" />
+                        <h4>Website Development and Design</h4>
+                        <p>Clean, fast, aesthetic websites that tell your story,
+                            build trust, and guide visitors smoothly
+                            toward taking action, making inquiries, or becoming
+                            loyal customers.</p>
+                        <a href="#"
+                            style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                            MORE</a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card reveal-left">
+                        <img class="services_card_images"
+                            src="images/9-1.png" />
+                        <h4>Web 3 Development</h4>
+                        <p>Future-ready digital experiences built on blockchain,
+                            smart contracts, and decentralized systems.
+                            We help brands step into Web 3 with clarity,
+                            creativity, and real-world use cases.</p>
+                        <a href="#"
+                            style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                            MORE</a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card reveal-left">
+                        <img class="services_card_images"
+                            src="images/9-1.png" />
+                        <h4>SEO (Search Engine Optimisation)</h4>
+                        <p>Ranking on Google isn’t luck. We optimize your
+                            website structure, content, and keywords so your
+                            brand shows up when people are actively searching
+                            for what you offer.</p>
+                        <a href="#"
+                            style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                            MORE</a>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card reveal-right">
+                        <i class="fas fa-mobile-alt card-icon"></i>
+                        <h4>Social Media Management</h4>
+                        <p>From strategy to posting, we help your brand stay
+                            consistent, relevant, and relatable while
+                            building engagement, growing your audience, and
+                            turning followers into real customers.</p>
+                        <a href="#"
+                            style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                            MORE</a>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card reveal-right">
+                        <i class="fas fa-hashtag card-icon"></i>
+                        <h4>Lead Generation & Digital Ads</h4>
+                        <p>We run smart ad campaigns that reach the right
+                            audience, attract high-intent leads, and turn
+                            clicks into real inquiries, bookings, and consistent
+                            business growth.</p>
+                        <a href="#"
+                            style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                            MORE</a>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="card reveal-right">
+                        <i class="fas fa-laptop-code card-icon"></i>
+                        <h4>Content Marketing</h4>
+                        <p>Content that feels human, not robotic. From blogs to
+                            brand storytelling, we create words that
+                            build trust, spark interest, and turn readers into
+                            customers.</p>
+                        <a href="#"
+                            style="color:var(--secondary); font-weight:700; font-size:0.8rem;">LEARN
+                            MORE</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- WHY CHOOSE US -->
-    <section class="section-padding why_choose_section" style="background:#18181b">
-        <div class="container animate-on-scroll">
-            <div class="text-center">
-                <span class="badge">Why Choose Us</span>
-                <h2>Digital marketing that actually drives sales, not just likes
+        <!-- TESTIMONIALS -->
+        <section class="section-padding" style="background: #18181b;">
+            <div class="container split-section animate-on-scroll">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Parturient blandit posuere rutrum montes duis purus.
+                        Justo lobortis mi phasellus imperdiet tristique
+                        eget augue penatibus."</p>
+                    <div class="client-info">
+                        <img
+                            src="https://randomuser.me/api/portraits/women/44.jpg"
+                            class="client-img" alt="User">
+                        <div>
+                            <h5>McKenna Heath</h5>
+                            <small style="color:var(--secondary)">CEO
+                                LOKAMART</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Parturient blandit posuere rutrum montes duis purus.
+                        Justo lobortis mi phasellus imperdiet tristique
+                        eget augue penatibus."</p>
+                    <div class="client-info">
+                        <img
+                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            class="client-img" alt="User">
+                        <div>
+                            <h5>John Doe</h5>
+                            <small
+                                style="color:var(--secondary)">MANAGER</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GREEN SPLIT FEATURE -->
+        <section class="green-split">
+            <div class="green-content animate-on-scroll">
+                <img class="green_bg" src="images/bg_img_line.png" />
+                <h3 class="animate-on-scroll">Feel everything. Create
+                    everything. Grow everything.</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> -->
+                <ul class="feature-list">
+                    <li class="reveal-left">
+                        <i class="fas fa-lightbulb feature-icon"></i>
+                        <div>
+                            <h4>Creative Team</h4>
+                            <p style="margin:0; font-size:0.9rem;">A team of
+                                designers, strategists, and marketers who
+                                actually care about your brand.</p>
+                        </div>
+                    </li>
+                    <li class="reveal-left">
+                        <i class="fas fa-rocket feature-icon"></i>
+                        <div>
+                            <h4>Smart Strategies</h4>
+                            <p style="margin:0; font-size:0.9rem;">Data-backed
+                                plans mixed with creative thinking so every
+                                move makes sense.</p>
+                        </div>
+                    </li>
+                    <li class="reveal-left">
+                        <i class="fas fa-cog feature-icon"></i>
+                        <div>
+                            <h4>Reliable Execution</h4>
+                            <p style="margin:0; font-size:0.9rem;">Deadlines
+                                met, communication clear, and results tracked,
+                                no ghosting.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="green-image reveal-right">
+                <img class="animate-on-scroll"
+                    src="https://media.istockphoto.com/id/1209793467/photo/crash-tesh-dummy-in-car.jpg?s=612x612&w=0&k=20&c=exV6ExZZ-wIS_lmRicJZf8Xtn8mzDEt4TczkATuqx48=" />
+            </div>
+
+        </section>
+
+        <!-- PROCESS -->
+        <section class="section-padding how_it_work_section ">
+            <div class="container text-center animate-on-scroll">
+                <span class="badge">How It Works</span>
+                <h2>Simple steps. No marketing headaches.</h2>
+                <div class="cards-grid reveal-left">
+                    <div class="process-card">
+                        <i class="far fa-comments fa-2x mb-3"
+                            style="color:var(--secondary); margin-bottom:15px;"></i>
+                        <h4>Free Consultation</h4>
+                        <p>We listen, understand your goals, and map out a clear
+                            game plan.</p>
+                        <a href="#" class="btn btn-primary"> CHAT NOW</a>
+                    </div>
+                    <div class="process-card animate-on-scroll">
+                        <i class="fas fa-list-ul fa-2x mb-3"
+                            style="color:var(--secondary); margin-bottom:15px;"></i>
+                        <h4>Choose Your Plan
+                        </h4>
+                        <p>Pick a package that fits your goals and budget—no
+                            confusing jargon.
+                        </p>
+                        <a href="#" class="btn btn-primary"> Choose Plan
+                        </a>
+                    </div>
+                    <div class="process-card reveal-right">
+                        <i class="fas fa-video fa-2x mb-3"
+                            style="color:var(--secondary); margin-bottom:15px;"></i>
+                        <h4>Execution & Growth
+                        </h4>
+                        <p>We build, launch, test, and scale while you focus on
+                            your business.
+                        </p>
+                        <a href="#" class="btn btn-primary"> Start Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="section-padding why_choose_section"
+            style="background:#18181b">
+            <div class="container animate-on-scroll">
+                <div class="text-center">
+                    <span class="badge">Why Choose Us</span>
+                    <h2>Digital marketing that actually drives sales, not just
+                        likes
+                    </h2>
+                </div>
+                <div class="cards-grid" style="grid-template-columns: 1fr 1fr;">
+                    <div class="wide-card reveal-left">
+                        <img src="images/17.png" />
+                        <div class="wide-card-content">
+                            <h4>Enterprise-Level Security
+                            </h4>
+                            <p>Your data and brand assets stay safe and
+                                protected.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="wide-card reveal-right">
+                        <img src="images/17.png" />
+                        <div class="wide-card-content">
+                            <h4>Global Scalability
+
+                            </h4>
+                            <p>We build systems that grow with your brand, not
+                                limit it.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="wide-card reveal-left">
+                        <img src="images/17.png" />
+                        <div class="wide-card-content">
+                            <h4>Easy Payments
+
+                            </h4>
+                            <p>Smooth and transparent payment options—no awkward
+                                surprises.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="wide-card reveal-right">
+                        <img src="images/17.png" />
+                        <div class="wide-card-content">
+                            <h4>Dedicated Onboarding Team
+                            </h4>
+                            <p>We guide you step-by-step so you never feel
+                                lost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT CARDS -->
+        <section class="section-padding help_section animate-on-scroll">
+            <img class="help_bg" src="images/bg_img_line.png" />
+            <div class="container animate-on-scroll">
+                <h2 class="text-center reveal-left">Need backup? We got you.
                 </h2>
-            </div>
-            <div class="cards-grid" style="grid-template-columns: 1fr 1fr;">
-                <div class="wide-card">
-                    <img src="images/17.png" />
-                    <div class="wide-card-content">
-                        <h4>Enterprise-Level Security
+                <div class="cards-grid">
+                    <div class="card reveal-left">
+                        <div class>
+                            <img src="images/14.png" />
+                        </div>
+                        <h4>Sales Support
                         </h4>
-                        <p>Your data and brand assets stay safe and protected.
+                        <p>Questions about services or pricing? Let’s talk.
                         </p>
+                        <a href="#" class="btn btn-primary">Chat Now
+                        </a>
                     </div>
-                </div>
-
-                <div class="wide-card">
-                    <img src="images/17.png" />
-                    <div class="wide-card-content">
-                        <h4>Global Scalability
-
+                    <div class="card reveal-left">
+                        <div class>
+                            <img src="images/14.png" />
+                        </div>
+                        <h4>Talk to Our Expert
                         </h4>
-                        <p>We build systems that grow with your brand, not limit it.
-
+                        <p>Get direct guidance from our strategy team.</p>
+                        <a href="#" class="btn btn-primary">Talk to Us</a>
+                    </div>
+                    <div class="card reveal-left">
+                        <div class>
+                            <img src="images/14.png" />
+                        </div>
+                        <h4>Customer Support
+                        </h4>
+                        <p>Already working with us? We’re here for you.
                         </p>
-                    </div>
-                </div>
-
-                <div class="wide-card">
-                    <img src="images/17.png" />
-                    <div class="wide-card-content">
-                        <h4>Easy Payments
-
-                        </h4>
-                        <p>Smooth and transparent payment options—no awkward surprises.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="wide-card">
-                    <img src="images/17.png" />
-                    <div class="wide-card-content">
-                        <h4>Dedicated Onboarding Team
-                        </h4>
-                        <p>We guide you step-by-step so you never feel lost.</p>
+                        <a href="#" class="btn btn-primary">Contact Support
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- SUPPORT CARDS -->
-    <section class="section-padding help_section">
-        <img class="help_bg" src="images/bg_img_line.png" />
-        <div class="container animate-on-scroll">
-            <h2 class="text-center">Need backup? We got you.
-            </h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="">
-                        <img src="images/14.png" />
-                    </div>
-                    <h4>Sales Support
-                    </h4>
-                    <p>Questions about services or pricing? Let’s talk.
+        <!-- CTA & FOOTER -->
+        <div class="cta_section animate-on-scroll">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 class="reveal-left">Grow your brand with Mark Next Media
+                    </h2>
+                    <p class="reveal-right"
+                        style="color:#cbd5e1; margin-bottom:30px;">Smart
+                        strategy. Clean design. Content that hits. Marketing
+                        that works.
                     </p>
-                    <a href="#" class="btn btn-primary">Chat Now
-                    </a>
-                </div>
-                <div class="card">
-                    <div class="">
-                        <img src="images/14.png" />
+                    <div class="button_book reveal-right ">
+                        <a class="btn_Book animate-on-scroll">Book a Call
+                        </a>
+                        <a class="btn_start animate-on-scroll">Get Started
+                        </a>
                     </div>
-                    <h4>Talk to Our Expert
-                    </h4>
-                    <p>Get direct guidance from our strategy team.</p>
-                    <a href="#" class="btn btn-primary">Talk to Us</a>
-                </div>
-                <div class="card">
-                    <div class="">
-                        <img src="images/14.png" />
-                    </div>
-                    <h4>Customer Support
-                    </h4>
-                    <p>Already working with us? We’re here for you.
-                    </p>
-                    <a href="#" class="btn btn-primary">Contact Support
-                    </a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- CTA & FOOTER -->
-    <div class="cta_section">
-        <div class="container">
-            <div class="cta-box animate-on-scroll">
-                <h2>Grow your brand with Mark Next Media
-                </h2>
-                <p style="color:#cbd5e1; margin-bottom:30px;">Smart strategy. Clean design. Content that hits. Marketing
-                    that works.
-                </p>
-                <div class="button_book">
-                    <a class="btn_Book">Book a Call
-                    </a>
-                    <a class="btn_start">Get Started
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="logo" style="margin-bottom:20px;">
-                        <img class="footer_logo" src="images/logo.png" />
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="logo" style="margin-bottom:20px;">
+                            <img class="footer_logo" src="images/logo.png" />
+                        </div>
+                        <p>Mark Next Media is a creative-first digital agency
+                            built to help brands stand out online. From
+                            websites to social media to performance marketing,
+                            we turn ideas into digital impact.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
                     </div>
-                    <p>Mark Next Media is a creative-first digital agency built to help brands stand out online. From
-                        websites to social media to performance marketing, we turn ideas into digital impact.</p>
-                    <div class="socials">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    <div class="footer-links">
+                        <h4>Service</h4>
+                        <ul>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Web Developing</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Send Ticket</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Article & News</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Service</h4>
-                    <ul>
-                        <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Web Developing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Send Ticket</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Article & News</a></li>
-                    </ul>
+                <div
+                    style="border-top:1px solid #222; padding-top:20px; display:flex; justify-content:space-between; color:#666; font-size:0.8rem;">
+                    <p>Copyright © 2023 DigiBuzz. All rights reserved.</p>
+                    <div>
+                        <a href="#" style="margin-right:15px;">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
                 </div>
             </div>
-            <div
-                style="border-top:1px solid #222; padding-top:20px; display:flex; justify-content:space-between; color:#666; font-size:0.8rem;">
-                <p>Copyright © 2023 DigiBuzz. All rights reserved.</p>
-                <div>
-                    <a href="#" style="margin-right:15px;">Terms of Use</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- JAVASCRIPT FOR ANIMATIONS -->
-    <script>
-        // Scroll Animation Observer
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
+        <script src="script.js"></script>
 
-        const elements = document.querySelectorAll('.animate-on-scroll');
-        elements.forEach(el => observer.observe(el));
-    </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
-</body>
+    </body>
 
 </html>

@@ -1,75 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digibuzz - Digital Marketing Agency</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
-  
-</head>
-<body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                   <img class="logo_imag" src="images/logo.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digibuzz - Digital Marketing Agency</title>
+
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+ <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="responsive.css" />
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav>
+                        <div class="wrapper">
+                            <div class="logo"><a href="index.html">
+                                <img src="images/logo.png"/>
+                            </a></div>
+                            <input type="radio" name="slider" id="menu-btn">
+                            <input type="radio" name="slider" id="close-btn">
+                            <ul class="nav-links">
+                                <label for="close-btn" class="btn close-btn"><i
+                                        class="fas fa-times"></i></label>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="servisec.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="blog.html">Post</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li>
+                                    <a href="#" class="desktop-item">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    <label for="showDrop"
+                                        class="mobile-item">Pages</label>
+                                    <ul class="drop-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="about.html">Team</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="singleblog.html">Single Post</a></li>
+                                    </ul>
+                                </li>
+                               <div class="nab_button">
+                                <a class="header_btn" href="contact.html">Get Start</a>
+                               </div>
+                            </ul>
+                             
+                            <label for="menu-btn" class="btn menu-btn"><i
+                                    class="fas fa-bars"></i></label>
+                        </div>
+                    </nav>
                 </div>
-                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About us</a>
-                    <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="contact.html">Contact</a>
+            </div>
+        </header>
+
+        <div class="na-wrapper">
+            <div class="na-container">
+                <!-- Archive Header -->
+                <div class="na-hero">
+                    <h1>News & Article</h1>
+                    <p>Archives</p>
                 </div>
-                <button class="btn btn-primary">
-                    <a href="contact.html">Get Started</a>
-                </button>
-            </nav>
-        </div>
-    </header>
-      <main id="blog" class="page-section">
-        <div class="page-header">
-            <div class="container anim-hidden anim-up">
-                <h1>News & Articles</h1>
-                <p>Latest updates from the digital world.</p>
+
+                <!-- Articles Grid -->
+                <div class="na-grid">
+                    <!-- Card 1 -->
+                    <a href="singleblog.html" class="na-card reveal-left">
+                        <img
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+                            alt="Article 1">
+                        <h3>Unlocking the Power of Big Data: How Digital
+                            Agencies Are Leveraging Data Analytics for Business
+                            Growth</h3>
+                        <div class="na-meta">March 22, 2023 / No Comments</div>
+                        <p class="na-excerpt">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes,
+                            nascetur</p>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="singleblog.html" class="na-card reveal-left">
+                        <img
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+                            alt="Article 2">
+                        <h3>From SEO to SEM: How Digital Agencies Are Navigating
+                            the Evolving Landscape of Search Marketing</h3>
+                        <div class="na-meta">March 22, 2023 / No Comments</div>
+                        <p class="na-excerpt">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes,
+                            nascetur</p>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="singleblog.html" class="na-card reveal-left">
+                        <img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+                            alt="Article 3">
+                        <h3>Revolutionizing Social Media: The Impact of Digital
+                            Agencies on Social Media Marketing</h3>
+                        <div class="na-meta">March 22, 2023 / No Comments</div>
+                        <p class="na-excerpt">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes,
+                            nascetur</p>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="singleblog.html" class="na-card reveal-right">
+                        <img
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                            alt="Article 4">
+                        <h3>The Future of Digital Advertising: Emerging Trends
+                            and Strategies from Leading Digital Agencies</h3>
+                        <div class="na-meta">March 22, 2023 / No Comments</div>
+                        <p class="na-excerpt">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes,
+                            nascetur</p>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a href="singleblog.html" class="na-card reveal-right">
+                        <img
+                            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop"
+                            alt="Article 5">
+                        <h3>Innovating Digital Experiences: How Digital Agencies
+                            Are Transforming Customer Engagement</h3>
+                        <div class="na-meta">March 22, 2023 / No Comments</div>
+                        <p class="na-excerpt">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes,
+                            nascetur</p>
+                    </a>
+
+                    <!-- Card 6 -->
+                    <a href="singleblog.html" class="na-card reveal-right">
+                        <img
+                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+                            alt="Article 6">
+                        <h3>Mastering the Art of Digital Marketing: Insights
+                            from Top Digital Agencies</h3>
+                        <div class="na-meta">March 22, 2023 / No Comments</div>
+                        <p class="na-excerpt">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes,
+                            nascetur</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <section class="section-padding">
-            <div class="container grid-3">
-                <!-- Blog Post 1 -->
-                <div class="card blog-card anim-hidden anim-up">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80">
-                    <div class="blog-meta"><i class="far fa-calendar"></i> March 22, 2026</div>
-                    <h3>Top 10 SEO Trends for 2026</h3>
-                    <p style="color:var(--text-gray); margin-bottom:15px;">Discover how AI is changing the landscape of search engines.</p>
-                    <a onclick="showPage('single-post')" style="color:var(--primary); font-weight:700;">Read More &rarr;</a>
-                </div>
-                <!-- Blog Post 2 -->
-                <div class="card blog-card anim-hidden anim-up">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80">
-                    <div class="blog-meta"><i class="far fa-calendar"></i> Feb 15, 2026</div>
-                    <h3>The Future of Digital Marketing</h3>
-                    <p style="color:var(--text-gray); margin-bottom:15px;">Why automation is key to scaling your agency.</p>
-                    <a onclick="showPage('single-post')" style="color:var(--primary); font-weight:700;">Read More &rarr;</a>
-                </div>
-                <!-- Blog Post 3 -->
-                <div class="card blog-card anim-hidden anim-up">
-                    <img src="https://images.unsplash.com/photo-1531297461136-820863143190?auto=format&fit=crop&w=600&q=80">
-                    <div class="blog-meta"><i class="far fa-calendar"></i> Jan 10, 2026</div>
-                    <h3>Web Design Best Practices</h3>
-                    <p style="color:var(--text-gray); margin-bottom:15px;">How to improve UI/UX for better conversion rates.</p>
-                    <a onclick="showPage('single-post')" style="color:var(--primary); font-weight:700;">Read More &rarr;</a>
+        <!-- CTA  -->
+        <div class="cta_section animate-on-scroll">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 class="reveal-left">Grow your brand with Mark Next Media
+                    </h2>
+                    <p class="reveal-right"
+                        style="color:#cbd5e1; margin-bottom:30px;">Smart
+                        strategy. Clean design. Content that hits. Marketing
+                        that works.
+                    </p>
+                    <div class="button_book reveal-right ">
+                        <a class="btn_Book animate-on-scroll">Book a Call
+                        </a>
+                        <a class="btn_start animate-on-scroll">Get Started
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
-</body>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="logo" style="margin-bottom:20px;">
+                            <img class="footer_logo" src="images/logo.png" />
+                        </div>
+                        <p>Mark Next Media is a creative-first digital agency
+                            built to help brands stand out online. From
+                            websites to social media to performance marketing,
+                            we turn ideas into digital impact.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Service</h4>
+                        <ul>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Web Developing</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Send Ticket</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Article & News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    style="border-top:1px solid #222; padding-top:20px; display:flex; justify-content:space-between; color:#666; font-size:0.8rem;">
+                    <p>Copyright © 2023 DigiBuzz. All rights reserved.</p>
+                    <div>
+                        <a href="#" style="margin-right:15px;">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>

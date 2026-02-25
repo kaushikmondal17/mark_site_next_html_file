@@ -14,32 +14,60 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+
+        
+ <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="responsive.css" />
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <!-- <img class="logo_imag" src="images/logo.png"> -->
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav>
+                        <div class="wrapper">
+                            <div class="logo"><a href="index.html">
+                                <img src="images/logo.png"/>
+                            </a></div>
+                            <input type="radio" name="slider" id="menu-btn">
+                            <input type="radio" name="slider" id="close-btn">
+                            <ul class="nav-links">
+                                <label for="close-btn" class="btn close-btn"><i
+                                        class="fas fa-times"></i></label>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="servisec.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="blog.html">Post</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li>
+                                    <a href="#" class="desktop-item">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    <label for="showDrop"
+                                        class="mobile-item">Pages</label>
+                                    <ul class="drop-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="about.html">Team</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="singleblog.html">Single Post</a></li>
+                                    </ul>
+                                </li>
+                               <div class="nab_button">
+                                <a class="header_btn" href="contact.html">Get Start</a>
+                               </div>
+                            </ul>
+                             
+                            <label for="menu-btn" class="btn menu-btn"><i
+                                    class="fas fa-bars"></i></label>
+                        </div>
+                    </nav>
                 </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About us</a>
-                    <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <button class="btn btn-primary">Get Started</button>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </header>
 
     <!-- SECTION 1: HERO TITLE -->
     <section class="hero-title reveal">

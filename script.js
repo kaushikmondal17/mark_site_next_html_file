@@ -111,3 +111,97 @@ window.addEventListener("scroll", reveal);
 
 // Trigger once on load to show elements already in view
 window.addEventListener("load", reveal);
+
+
+
+// animation js
+
+// window.addEventListener("scroll", revealOnScroll);
+
+// function revealOnScroll() {
+//   const elements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+
+//   elements.forEach((el) => {
+//     const windowHeight = window.innerHeight;
+//     const elementTop = el.getBoundingClientRect().top;
+//     const revealPoint = 100;
+
+//     if (elementTop < windowHeight - revealPoint) {
+//       el.classList.add("active");
+//     } else {
+//       el.classList.remove("active");
+//     }
+//   });
+// }
+
+
+// animation_scrol
+  const scrollObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active-scroll');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document
+    .querySelectorAll('.animate-on-scroll')
+    .forEach(el => scrollObserver.observe(el));
+
+
+//  animation_reveal
+
+  window.addEventListener("scroll", revealOnScroll);
+
+  function revealOnScroll() {
+    const elements = document.querySelectorAll(
+      ".reveal, .reveal-left, .reveal-right"
+    );
+
+    elements.forEach((el) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add("active-reveal");
+      } else {
+        el.classList.remove("active-reveal");
+      }
+    });
+  }
+
+
+
+// faq_section
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* ========== FAQ ACCORDION ========== */
+  document.querySelectorAll('.faq-pg-acc-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+
+      item.classList.toggle('active');
+      header.classList.toggle('active');
+    });
+  });
+});
+
+
+const faqObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('faq-pg-visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.faq-pg-anim-left, .faq-pg-anim-right')
+    .forEach(el => faqObserver.observe(el));
+
+
+

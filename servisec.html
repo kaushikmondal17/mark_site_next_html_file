@@ -11,38 +11,64 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+ <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="responsive.css" />
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <!-- <img class="logo_imag" src="images/logo.png"> -->
-                </div>
-                 <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About us</a>
-                    <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <button class="btn btn-primary">Get Started</button>
-            </nav>
-        </div>
-    </header>
 
-    
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav>
+                        <div class="wrapper">
+                            <div class="logo"><a href="index.html">
+                                <img src="images/logo.png"/>
+                            </a></div>
+                            <input type="radio" name="slider" id="menu-btn">
+                            <input type="radio" name="slider" id="close-btn">
+                            <ul class="nav-links">
+                                <label for="close-btn" class="btn close-btn"><i
+                                        class="fas fa-times"></i></label>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="servisec.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="blog.html">Post</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li>
+                                    <a href="#" class="desktop-item">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    <label for="showDrop"
+                                        class="mobile-item">Pages</label>
+                                    <ul class="drop-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="about.html">Team</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="singleblog.html">Single Post</a></li>
+                                    </ul>
+                                </li>
+                               <div class="nab_button">
+                                <a class="header_btn" href="contact.html">Get Start</a>
+                               </div>
+                            </ul>
+                             
+                            <label for="menu-btn" class="btn menu-btn"><i
+                                    class="fas fa-bars"></i></label>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
     <!-- Hero -->
-    <section class="srv-hero-section">
+    <section class="srv-hero-section animate-on-scroll">
         <div class="srv-container">
-            <div class="srv-hero-card srv-reveal-left">
+            <div class="srv-hero-card reveal-left">
                 <h1>Services</h1>
                 <p>Our mission is to help the entire world do business online.</p>
             </div>
@@ -50,16 +76,18 @@
     </section>
 
     <!-- Intro Section -->
-    <section class="srv-container">
+    <section class="srv-container animate-on-scroll">
         <div class="srv-intro-flex">
-            <div class="srv-intro-content srv-reveal-left">
+            <div class="srv-intro-content reveal-left">
                 <span class="srv-label">OUR VALUES</span>
                 <h2 class="srv-h2">Making your business a success with cutting edge technology.</h2>
-                <p class="srv-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <p class="srv-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
                 <a href="#" class="srv-btn-teal">DISCOVER MORE</a>
             </div>
-            <div class="srv-intro-image-area srv-reveal-right">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" class="srv-intro-img" alt="Woman working">
+            <div class="srv-intro-image-area reveal-right">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80"
+                    class="srv-intro-img" alt="Woman working">
                 <div class="srv-badge">
                     <span style="color:#008fa1">✔</span> 100% Trusted Digital Agency
                 </div>
@@ -68,18 +96,18 @@
     </section>
 
 
-       <!-- SERVICES GRID -->
-    <section class="section-padding we_offer_section">
+    <!-- SERVICES GRID -->
+    <section class="section-padding we_offer_section animate-on-scroll">
         <img class="services_bg" src="images/bg_img_line.png" />
         <div class="container">
-            <div class="text-center srv-reveal-right">
+            <div class="text-center reveal-right">
                 <span class="badge">What We Offer</span>
                 <h2>What we bring to your brand party</h2>
             </div>
 
             <div class="cards-grid">
                 <!-- Card 1 -->
-                <div class="card srv-reveal-leftd">
+                <div class="card reveal-leftd">
                     <img class="services_card_images" src="images/9-1.png" />
                     <h4>Website Development and Design</h4>
                     <p>Clean, fast, aesthetic websites that tell your story, build trust, and guide visitors smoothly
@@ -88,7 +116,7 @@
                         MORE</a>
                 </div>
                 <!-- Card 2 -->
-                <div class="card srv-reveal-left">
+                <div class="card reveal-left">
                     <img class="services_card_images" src="images/9-1.png" />
                     <h4>Web 3 Development</h4>
                     <p>Future-ready digital experiences built on blockchain, smart contracts, and decentralized systems.
@@ -97,7 +125,7 @@
                         MORE</a>
                 </div>
                 <!-- Card 3 -->
-                <div class="card srv-reveal-right">
+                <div class="card reveal-right">
                     <img class="services_card_images" src="images/9-1.png" />
                     <h4>SEO (Search Engine Optimisation)</h4>
                     <p>Ranking on Google isn’t luck. We optimize your website structure, content, and keywords so your
@@ -106,8 +134,8 @@
                         MORE</a>
                 </div>
                 <!-- Card 4 -->
-                <div class="card srv-reveal-right">
-                     <img class="services_card_images" src="images/9-1.png" />
+                <div class="card reveal-right">
+                    <img class="services_card_images" src="images/9-1.png" />
                     <h4>Social Media Management</h4>
                     <p>From strategy to posting, we help your brand stay consistent, relevant, and relatable while
                         building engagement, growing your audience, and turning followers into real customers.</p>
@@ -115,7 +143,7 @@
                         MORE</a>
                 </div>
                 <!-- Card 5 -->
-                <div class="card srv-reveal-right">
+                <div class="card reveal-right">
                     <img class="services_card_images" src="images/9-1.png" />
                     <h4>Lead Generation & Digital Ads</h4>
                     <p>We run smart ad campaigns that reach the right audience, attract high-intent leads, and turn
@@ -124,8 +152,8 @@
                         MORE</a>
                 </div>
                 <!-- Card 6 -->
-                <div class="card srv-reveal-right">
-                     <img class="services_card_images" src="images/9-1.png" />
+                <div class="card reveal-right">
+                    <img class="services_card_images" src="images/9-1.png" />
                     <h4>Content Marketing</h4>
                     <p>Content that feels human, not robotic. From blogs to brand storytelling, we create words that
                         build trust, spark interest, and turn readers into customers.</p>
@@ -136,17 +164,17 @@
         </div>
     </section>
 
-     <!-- STATS SECTION -->
-    <section class="section-padding stats-section">
-        <div class="container text-center srv-reveal-right">
+    <!-- STATS SECTION -->
+    <section class="section-padding stats-section animate-on-scroll">
+        <div class="container text-center reveal-right">
             <h2>We create sales, leads, and new business opportunities for our clients.</h2>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> -->
             <button class="btn btn-primary">Discover More</button>
 
-            <div class="stats-grid srv-reveal-left">
+            <div class="stats-grid reveal-left">
                 <div class="stat-item">
                     <h3>15+</h3>
-                    <p>PProjects Completed</p>
+                    <p>Projects Completed</p>
                 </div>
                 <div class="stat-item">
                     <h3>40+</h3>
@@ -164,16 +192,16 @@
         </div>
     </section>
 
-   <!-- WHY CHOOSE US -->
-    <section class="section-padding why_choose_section" style="background:#18181b">
-        <div class="container animate-on-scroll">
-            <div class="text-center">
+    <!-- WHY CHOOSE US -->
+    <section class=" animate-on-scroll why_choose_section" style="background:#18181b ">
+        <div class="container reveal">
+            <div class="text-center reveal-right">
                 <span class="badge">Why Choose Us</span>
                 <h2>Digital marketing that actually drives sales, not just likes
                 </h2>
             </div>
             <div class="cards-grid" style="grid-template-columns: 1fr 1fr;">
-                <div class="wide-card">
+                <div class="wide-card reveal-left ">
                     <img src="images/17.png" />
                     <div class="wide-card-content">
                         <h4>Enterprise-Level Security
@@ -183,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="wide-card">
+                <div class="wide-card reveal-right">
                     <img src="images/17.png" />
                     <div class="wide-card-content">
                         <h4>Global Scalability
@@ -195,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="wide-card">
+                <div class="wide-card reveal-left">
                     <img src="images/17.png" />
                     <div class="wide-card-content">
                         <h4>Easy Payments
@@ -206,7 +234,7 @@
                     </div>
                 </div>
 
-                <div class="wide-card">
+                <div class="wide-card reveal-right">
                     <img src="images/17.png" />
                     <div class="wide-card-content">
                         <h4>Dedicated Onboarding Team
@@ -219,18 +247,20 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="srv-container srv-testimonial-section">
+    <section class="srv-container srv-testimonial-section animate-on-scroll">
         <div class="srv-quote-icon srv-reveal-left">"</div>
         <div class="srv-testimonial-flex">
             <div class="srv-testi-card srv-reveal-left">
-                "Parturient blandit posuere rutrum montes dui purus. Justo lobortis mi phasellus imperdiet tristique eget augue penatibus. Magna quis eleifend facilisi vitae neque est risus diam ac urna."
+                "Parturient blandit posuere rutrum montes dui purus. Justo lobortis mi phasellus imperdiet tristique
+                eget augue penatibus. Magna quis eleifend facilisi vitae neque est risus diam ac urna."
                 <div class="srv-user">
                     <img src="https://i.pravatar.cc/100?u=1" alt="user">
                     <span><strong>McKenna Dash</strong></span>
                 </div>
             </div>
             <div class="srv-testi-card srv-reveal-right">
-                "Parturient blandit posuere rutrum montes dui purus. Justo lobortis mi phasellus imperdiet tristique eget augue penatibus. Magna quis eleifend facilisi vitae neque est risus diam ac urna."
+                "Parturient blandit posuere rutrum montes dui purus. Justo lobortis mi phasellus imperdiet tristique
+                eget augue penatibus. Magna quis eleifend facilisi vitae neque est risus diam ac urna."
                 <div class="srv-user">
                     <img src="https://i.pravatar.cc/100?u=2" alt="user">
                     <span><strong>McKenna Dash</strong></span>
@@ -239,7 +269,7 @@
         </div>
     </section>
 
-  <div class="cta_section ">
+    <div class="cta_section animate-on-scroll ">
         <div class="container">
             <div class="cta-box srv-reveal-right">
                 <h2>Grow your brand with Mark Next Media
@@ -256,7 +286,7 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -310,25 +340,7 @@
     </footer>
 
 
-<script>
-    // --- SCROLL ANIMATION JAVASCRIPT ---
-    const srvObserverOptions = {
-        threshold: 0.15
-    };
-
-    const srvObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('srv-visible');
-            }
-        });
-    }, srvObserverOptions);
-
-    // Select all elements to animate
-    document.querySelectorAll('.srv-reveal-left, .srv-reveal-right').forEach(el => {
-        srvObserver.observe(el);
-    });
-</script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>

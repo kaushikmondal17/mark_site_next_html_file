@@ -14,35 +14,61 @@
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="responsive.css" />
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <!-- <img class="logo_imag" src="images/logo.png"> -->
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav>
+                        <div class="wrapper">
+                            <div class="logo"><a href="index.html">
+                                <img src="images/logo.png"/>
+                            </a></div>
+                            <input type="radio" name="slider" id="menu-btn">
+                            <input type="radio" name="slider" id="close-btn">
+                            <ul class="nav-links">
+                                <label for="close-btn" class="btn close-btn"><i
+                                        class="fas fa-times"></i></label>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="servisec.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="blog.html">Post</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li>
+                                    <a href="#" class="desktop-item">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <input type="checkbox" id="showDrop">
+                                    <label for="showDrop"
+                                        class="mobile-item">Pages</label>
+                                    <ul class="drop-menu">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="about.html">Team</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="singleblog.html">Single Post</a></li>
+                                    </ul>
+                                </li>
+                               <div class="nab_button">
+                                <a class="header_btn" href="contact.html">Get Start</a>
+                               </div>
+                            </ul>
+                             
+                            <label for="menu-btn" class="btn menu-btn"><i
+                                    class="fas fa-bars"></i></label>
+                        </div>
+                    </nav>
                 </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About us</a>
-                    <a href="servisec.html">Services <i class="fas fa-chevron-down"></i></a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <button class="btn btn-primary">Get Started</button>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </header>
 
     <!-- SECTION 1: HERO -->
-    <section class="contact-hero">
+    <section class="contact-hero animate-on-scroll">
         <div class="hero-card reveal-left">
             <h1>Contact us</h1>
             <p>Start the conversation to established good relationship and business</p>
@@ -50,7 +76,7 @@
     </section>
 
     <!-- SECTION 2: INFO CARDS -->
- <div class="contact_card">
+ <div class="contact_card animate-on-scroll" >
        <div class="container">
         <div class="info-grid">
             <div class="info-card reveal-left">
@@ -59,7 +85,7 @@
                 <p>Jln Cempaka Wangi No 22<br>Jakarta - Indonesia</p>
                 <button class="btn-teal">Find Us</button>
             </div>
-            <div class="info-card reveal-right">
+            <div class="info-card reveal-left">
                 <span class="info-icon">💬</span>
                 <h3>Talk to our expert</h3>
                 <p>Mollis enim vivamus elementum convallis ultrices auctor fusce pharetra velit</p>
@@ -76,12 +102,12 @@
  </div>
 
     <!-- SECTION 3: MAP -->
-    <section class="map-section reveal-right">
+    <section class="map-section animate-on-scroll">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.546467490233!2d-0.12196172340320743!3d51.503186371812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <!-- SECTION 4: FORM SECTION -->
- <div class="form_contact">
+ <div class="form_contact animate-on-scroll">
        <div class="container">
         <div class="form-section">
             <div class="form-image reveal-left"></div>
@@ -111,7 +137,7 @@
 
  <!-- Grow CTA -->
       <!-- CTA & FOOTER -->
-       <div class="cta_section ">
+       <div class="cta_section animate-on-scroll ">
         <div class="container">
             <div class="cta-box reveal-right">
                 <h2>Grow your brand with Mark Next Media
@@ -179,24 +205,7 @@
             </div>
         </footer>
 
-    <script>
-        // --- Intersection Observer for Scroll Animations ---
-        const observerOptions = {
-            threshold: 0.15
-        };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        // Track all reveal elements
-        document.querySelectorAll('.reveal-left, .reveal-right').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
