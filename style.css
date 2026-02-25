@@ -996,6 +996,7 @@ footer {
 .we_offer_section {
   padding: 120px 0;
   position: relative;
+  overflow: hidden !important;
 }
 
 .services_bg {
@@ -2237,7 +2238,9 @@ pointer {
         .db-single-post-info span { font-size: 11px; color: #888; }
 
        
-
+.testminial_section{
+  overflow: hidden !important;
+}
 
 
 

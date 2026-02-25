@@ -1,44 +1,31 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- HEADER --- */
-/* header {
-  position: fixed;
+header {
+  /* position: fixed; */
   top: 0;
   width: 100%;
-  background: rgba(17, 24, 39, 0.95);
+  overflow-X: hidden;
   backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-} */
+  padding: 0;
+  background: #f6f7f7;
+  height: 70px;
+}
 
 nav {
-  position: fixed;
+  position: relative;
   z-index: 99;
   width: 100%;
-  background: #f6f7f7;
   align-items: center;
+  background: #f6f7f7;
+  padding: 0px 40px;
 }
 nav .wrapper {
   position: relative;
-  /* width: 100%; */
-  padding: 0px 30px;
-  height: 70px;
-  line-height: 70px;
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
