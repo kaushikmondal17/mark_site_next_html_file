@@ -1,203 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digibuzz - Digital Marketing Agency</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digibuzz - Digital Marketing Agency</title>
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
 
-     <link rel="stylesheet" href="style.css" />
+        <!-- bootstrap cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+
+        <!-- font awosam -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="nav.css" />
         <link rel="stylesheet" href="responsive.css" />
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <!-- HEADER -->
-
-        <header>
+        <!-- HEADER -->
+ <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <div class="row">
-                    <nav>
-                        <div class="wrapper">
-                            <div class="logo"><a href="index.html">
-                                <img src="images/logo.png"/>
-                            </a></div>
-                            <input type="radio" name="slider" id="menu-btn">
-                            <input type="radio" name="slider" id="close-btn">
-                            <ul class="nav-links">
-                                <label for="close-btn" class="btn close-btn"><i
-                                        class="fas fa-times"></i></label>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="servisec.html">Services</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="blog.html">Post</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li>
-                                    <a href="#" class="desktop-item">Pages <i class="fa-solid fa-angle-down"></i></a>
-                                    <input type="checkbox" id="showDrop">
-                                    <label for="showDrop"
-                                        class="mobile-item">Pages</label>
-                                    <ul class="drop-menu">
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="about.html">Team</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="singleblog.html">Single Post</a></li>
-                                    </ul>
-                                </li>
-                               <div class="nab_button">
-                                <a class="header_btn" href="contact.html">Get Start</a>
-                               </div>
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/logo.png"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servisec.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact US</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="singleblog.html">Single Post</a></li>
                             </ul>
-                             
-                            <label for="menu-btn" class="btn menu-btn"><i
-                                    class="fas fa-bars"></i></label>
-                        </div>
-                    </nav>
+                        </li>
+                        
+                    </ul>
+                    <div class="get_button">
+                        <a class="header_button" href="contact.html">GET START</a>
+                    </div>
                 </div>
             </div>
-        </header>
+        </nav>
+    </header>
 
-    <!-- HERO -->
-    <section class="db-single-hero animate-on-scroll">
-        <div class="db-single-container">
-            <div class="db-single-hero-card reveal-left">
-                <span class="db-single-tag">Marketing</span>
-                <h1>Revolutionizing Social Media: The Impact of Digital Agencies on Social Media Marketing</h1>
-                <div class="db-single-meta">
-                    📅 March 22, 2023 &nbsp;&nbsp; 💬 No Comments
+        <!-- HERO -->
+        <section class="db-single-hero animate-on-scroll">
+            <div class="db-single-container">
+                <div class="db-single-hero-card reveal-left">
+                    <span class="db-single-tag">Marketing</span>
+                    <h1>Revolutionizing Social Media: The Impact of Digital
+                        Agencies on Social Media Marketing</h1>
+                    <div class="db-single-meta">
+                        📅 March 22, 2023 &nbsp;&nbsp; 💬 No Comments
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT AREA -->
+        <div class="db-single-container animate-on-scroll">
+            <div class="db-single-main-flex">
+
+                <!-- LEFT CONTENT -->
+                <div class="db-single-content-area">
+                    <p class="db-single-p">Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor. Aenean massa. Cum sociis natoque penatibus et
+                        magnis dis parturient montes, nascetur ridiculus mus.
+                        Donec quam felis, ultricies nec, pellentesque eu,
+                        pretium quis, sem.</p>
+                    <p class="db-single-p">Nulla consequat massa quis enim.
+                        Donec pede justo, fringilla vel, aliquet nec, vulputate
+                        eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                        venenatis vitae, justo. Nullam dictum felis eu pede
+                        mollis pretium. Integer tincidunt. Cras dapibus.</p>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+                        class="db-single-inner-img" alt="Team Work">
+
+                    <p class="db-single-p">Quisque rutrum. Aenean imperdiet.
+                        Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                        tempus, tellus eget condimentum rhoncus, sem quam semper
+                        libero, sit amet adipiscing sem neque sed ipsum.</p>
+
+                    <!-- Share Buttons -->
+                    <div class="db-single-share-grid reveal-left">
+                        <a href="#" class="db-single-share-btn">f Facebook</a>
+                        <a href="#" class="db-single-share-btn">t Twitter</a>
+                        <a href="#" class="db-single-share-btn">m Email</a>
+                        <a href="#" class="db-single-share-btn">p Print</a>
+                    </div>
+
+                    <!-- Author Box -->
+                    <div class="db-single-author-box">
+                        <img src="https://i.pravatar.cc/150?u=natalie"
+                            class="db-single-author-img" alt="Natalie Stanley">
+                        <div class="db-single-author-info">
+                            <h4>Natalie Stanley</h4>
+                            <p>Hi, this is dummy biographical info for the
+                                design template kit moxcreative. If any
+                                questions do hesitate to send us a message on
+                                the profile page ThemeForest.</p>
+                        </div>
+                    </div>
+
+                    <!-- Reply Form -->
+                    <div class="db-single-reply-section">
+                        <h2>Leave a Reply</h2>
+                        <p>Your email address will not be published. Required
+                            fields are marked *</p>
+                        <form>
+                            <div class="db-single-form-group">
+                                <label>Comment *</label>
+                                <textarea class="db-single-textarea"></textarea>
+                            </div>
+                            <div class="db-single-form-group">
+                                <label>Name *</label>
+                                <input type="text" class="db-single-input">
+                            </div>
+                            <div class="db-single-form-group">
+                                <label>Email *</label>
+                                <input type="email" class="db-single-input">
+                            </div>
+                            <div class="db-single-form-group">
+                                <label>Website</label>
+                                <input type="text" class="db-single-input">
+                            </div>
+                            <div
+                                style="margin-bottom: 20px; font-size: 13px; color: #a0a0a0;">
+                                <input type="checkbox"> Save my name, email, and
+                                website in this browser for the next time I
+                                comment.
+                            </div>
+                            <button type="submit"
+                                class="db-single-btn-submit">POST
+                                COMMENT</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDEBAR -->
+                <div class="db-single-sidebar-area reveal-right">
+                    <div class="db-single-search-box">
+                        <input type="text" class="db-single-search-input"
+                            placeholder="Search...">
+                        <button class="db-single-search-btn">🔍</button>
+                    </div>
+
+                    <div class="db-single-newsletter">
+                        <h3 class="reveal-left">Newsletter</h3>
+                        <p>Signup our newsletter to get update information,
+                            news, insight or promotions.</p>
+                        <input type="email" class="db-single-input"
+                            placeholder="Email"
+                            style="margin-bottom: 10px; background: rgba(0,0,0,0.3);">
+                        <button class="db-single-btn-submit"
+                            style="width: 100%;">✉ SIGN UP</button>
+                    </div>
+
+                    <h3>Latest Post</h3>
+                    <div class="db-single-latest-post">
+                        <img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=100"
+                            class="db-single-post-thumb" alt="thumb">
+                        <div class="db-single-post-info">
+                            <h5>Unlocking the Power of Big Data...</h5>
+                            <span>March 22, 2023</span>
+                        </div>
+                    </div>
+                    <div class="db-single-latest-post">
+                        <img
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=100"
+                            class="db-single-post-thumb" alt="thumb">
+                        <div class="db-single-post-info">
+                            <h5>From SEO to SEM: Navigating...</h5>
+                            <span>March 22, 2023</span>
+                        </div>
+                    </div>
+                    <div class="db-single-latest-post">
+                        <img
+                            src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=100"
+                            class="db-single-post-thumb" alt="thumb">
+                        <div class="db-single-post-info">
+                            <h5>The Future of Digital Advertising...</h5>
+                            <span>March 22, 2023</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- MAIN CONTENT AREA -->
-    <div class="db-single-container animate-on-scroll">
-        <div class="db-single-main-flex">
-            
-            <!-- LEFT CONTENT -->
-            <div class="db-single-content-area">
-                <p class="db-single-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                <p class="db-single-p">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-                
-                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80" class="db-single-inner-img" alt="Team Work">
-                
-                <p class="db-single-p">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-
-                <!-- Share Buttons -->
-                <div class="db-single-share-grid reveal-left">
-                    <a href="#" class="db-single-share-btn">f Facebook</a>
-                    <a href="#" class="db-single-share-btn">t Twitter</a>
-                    <a href="#" class="db-single-share-btn">m Email</a>
-                    <a href="#" class="db-single-share-btn">p Print</a>
-                </div>
-
-                <!-- Author Box -->
-                <div class="db-single-author-box">
-                    <img src="https://i.pravatar.cc/150?u=natalie" class="db-single-author-img" alt="Natalie Stanley">
-                    <div class="db-single-author-info">
-                        <h4>Natalie Stanley</h4>
-                        <p>Hi, this is dummy biographical info for the design template kit moxcreative. If any questions do hesitate to send us a message on the profile page ThemeForest.</p>
-                    </div>
-                </div>
-
-                <!-- Reply Form -->
-                <div class="db-single-reply-section">
-                    <h2>Leave a Reply</h2>
-                    <p>Your email address will not be published. Required fields are marked *</p>
-                    <form>
-                        <div class="db-single-form-group">
-                            <label>Comment *</label>
-                            <textarea class="db-single-textarea"></textarea>
-                        </div>
-                        <div class="db-single-form-group">
-                            <label>Name *</label>
-                            <input type="text" class="db-single-input">
-                        </div>
-                        <div class="db-single-form-group">
-                            <label>Email *</label>
-                            <input type="email" class="db-single-input">
-                        </div>
-                        <div class="db-single-form-group">
-                            <label>Website</label>
-                            <input type="text" class="db-single-input">
-                        </div>
-                        <div style="margin-bottom: 20px; font-size: 13px; color: #a0a0a0;">
-                            <input type="checkbox"> Save my name, email, and website in this browser for the next time I comment.
-                        </div>
-                        <button type="submit" class="db-single-btn-submit">POST COMMENT</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- RIGHT SIDEBAR -->
-            <div class="db-single-sidebar-area reveal-right">
-                <div class="db-single-search-box">
-                    <input type="text" class="db-single-search-input" placeholder="Search...">
-                    <button class="db-single-search-btn">🔍</button>
-                </div>
-
-                <div class="db-single-newsletter">
-                    <h3 class="reveal-left">Newsletter</h3>
-                    <p>Signup our newsletter to get update information, news, insight or promotions.</p>
-                    <input type="email" class="db-single-input" placeholder="Email" style="margin-bottom: 10px; background: rgba(0,0,0,0.3);">
-                    <button class="db-single-btn-submit" style="width: 100%;">✉ SIGN UP</button>
-                </div>
-
-                <h3>Latest Post</h3>
-                <div class="db-single-latest-post">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=100" class="db-single-post-thumb" alt="thumb">
-                    <div class="db-single-post-info">
-                        <h5>Unlocking the Power of Big Data...</h5>
-                        <span>March 22, 2023</span>
-                    </div>
-                </div>
-                <div class="db-single-latest-post">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=100" class="db-single-post-thumb" alt="thumb">
-                    <div class="db-single-post-info">
-                        <h5>From SEO to SEM: Navigating...</h5>
-                        <span>March 22, 2023</span>
-                    </div>
-                </div>
-                <div class="db-single-latest-post">
-                    <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=100" class="db-single-post-thumb" alt="thumb">
-                    <div class="db-single-post-info">
-                        <h5>The Future of Digital Advertising...</h5>
-                        <span>March 22, 2023</span>
+        <!-- CTA & FOOTER -->
+        <div class="cta_section animate-on-scroll">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 class="reveal-left">Grow your brand with Mark Next Media
+                    </h2>
+                    <p class="reveal-right"
+                        style="color:#cbd5e1; margin-bottom:30px;">Smart
+                        strategy. Clean design. Content that hits. Marketing
+                        that works.
+                    </p>
+                    <div class="button_book reveal-right ">
+                        <a class="btn_Book animate-on-scroll">Book a Call
+                        </a>
+                        <a class="btn_start animate-on-scroll">Get Started
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
- <!-- CTA & FOOTER -->
-    <div class="cta_section animate-on-scroll">
-        <div class="container">
-            <div class="cta-box">
-                <h2 class="reveal-left">Grow your brand with Mark Next Media
-                </h2>
-                <p class="reveal-right" style="color:#cbd5e1; margin-bottom:30px;">Smart strategy. Clean design. Content that hits. Marketing
-                    that works.
-                </p>
-                <div class="button_book reveal-right ">
-                    <a class="btn_Book animate-on-scroll">Book a Call
-                    </a>
-                    <a class="btn_start animate-on-scroll">Get Started
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+        
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -205,8 +255,10 @@
                     <div class="logo" style="margin-bottom:20px;">
                         <img class="footer_logo" src="images/logo.png" />
                     </div>
-                    <p>Mark Next Media is a creative-first digital agency built to help brands stand out online. From
-                        websites to social media to performance marketing, we turn ideas into digital impact.</p>
+                    <p>Mark Next Media is a creative-first digital agency
+                        built to help brands stand out online. From
+                        websites to social media to performance marketing,
+                        we turn ideas into digital impact.</p>
                     <div class="socials">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -242,16 +294,20 @@
             <div
                 style="border-top:1px solid #222; padding-top:20px; display:flex; justify-content:space-between; color:#666; font-size:0.8rem;">
                 <p>Copyright © 2023 DigiBuzz. All rights reserved.</p>
-                <div>
+                <div class="footer_bottom">
                     <a href="#" style="margin-right:15px;">Terms of Use</a>
                     <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
     </footer>
-   
 
+        <script src="script.js"></script>
 
-<script src="script.js"></script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    </body>
 </html>

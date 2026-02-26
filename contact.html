@@ -1,211 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digibuzz - Digital Marketing Agency</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digibuzz - Digital Marketing Agency</title>
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
+        <!-- bootstrap cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+
+        <!-- font awosam -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="nav.css" />
         <link rel="stylesheet" href="responsive.css" />
-</head>
+    </head>
 
-<body>
+    <body>
+        <body>
 
-    <!-- HEADER -->
+            <!-- HEADER -->
 
         <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <div class="row">
-                    <nav>
-                        <div class="wrapper">
-                            <div class="logo"><a href="index.html">
-                                <img src="images/logo.png"/>
-                            </a></div>
-                            <input type="radio" name="slider" id="menu-btn">
-                            <input type="radio" name="slider" id="close-btn">
-                            <ul class="nav-links">
-                                <label for="close-btn" class="btn close-btn"><i
-                                        class="fas fa-times"></i></label>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="servisec.html">Services</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="blog.html">Post</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
-                                <li>
-                                    <a href="#" class="desktop-item">Pages <i class="fa-solid fa-angle-down"></i></a>
-                                    <input type="checkbox" id="showDrop">
-                                    <label for="showDrop"
-                                        class="mobile-item">Pages</label>
-                                    <ul class="drop-menu">
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="about.html">Team</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="singleblog.html">Single Post</a></li>
-                                    </ul>
-                                </li>
-                               <div class="nab_button">
-                                <a class="header_btn" href="contact.html">Get Start</a>
-                               </div>
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/logo.png"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servisec.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact US</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="singleblog.html">Single Post</a></li>
                             </ul>
-                             
-                            <label for="menu-btn" class="btn menu-btn"><i
-                                    class="fas fa-bars"></i></label>
-                        </div>
-                    </nav>
+                        </li>
+                        
+                    </ul>
+                    <div class="get_button">
+                        <a class="header_button" href="contact.html">GET START</a>
+                    </div>
                 </div>
             </div>
-        </header>
+        </nav>
+    </header>
 
-    <!-- SECTION 1: HERO -->
-    <section class="contact-hero animate-on-scroll">
-        <div class="hero-card reveal-left">
-            <h1>Contact us</h1>
-            <p>Start the conversation to established good relationship and business</p>
-        </div>
-    </section>
+            <!-- SECTION 1: HERO -->
+            <section class="contact-hero animate-on-scroll">
+                <div class="hero-card reveal-left">
+                    <h1>Contact us</h1>
+                    <p>Start the conversation to established good relationship
+                        and business</p>
+                </div>
+            </section>
 
-    <!-- SECTION 2: INFO CARDS -->
- <div class="contact_card animate-on-scroll" >
-       <div class="container">
-        <div class="info-grid">
-            <div class="info-card reveal-left">
-                <span class="info-icon">📍</span>
-                <h3>Head Office</h3>
-                <p>Jln Cempaka Wangi No 22<br>Jakarta - Indonesia</p>
-                <button class="btn-teal">Find Us</button>
-            </div>
-            <div class="info-card reveal-left">
-                <span class="info-icon">💬</span>
-                <h3>Talk to our expert</h3>
-                <p>Mollis enim vivamus elementum convallis ultrices auctor fusce pharetra velit</p>
-                <button class="btn-teal">Talk to Us</button>
-            </div>
-            <div class="info-card reveal-left">
-                <span class="info-icon">🌐</span>
-                <h3>Customer support</h3>
-                <p>Ac in dignissim venenatis amet auctor ipsum sem lobortis lorem nec</p>
-                <button class="btn-teal">Contact Support</button>
-            </div>
-        </div>
-    </div>
- </div>
-
-    <!-- SECTION 3: MAP -->
-    <section class="map-section animate-on-scroll">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.546467490233!2d-0.12196172340320743!3d51.503186371812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <!-- SECTION 4: FORM SECTION -->
- <div class="form_contact animate-on-scroll">
-       <div class="container">
-        <div class="form-section">
-            <div class="form-image reveal-left"></div>
-            <div class="form-content reveal-right">
-                <h2>Send us a message</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                
-                <form>
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" placeholder="Name">
+            <!-- SECTION 2: INFO CARDS -->
+            <div class="contact_card animate-on-scroll">
+                <div class="container">
+                    <div class="info-grid">
+                        <div class="info-card reveal-left">
+                            <span class="info-icon">📍</span>
+                            <h3>Head Office</h3>
+                            <p>Jln Cempaka Wangi No 22<br>Jakarta -
+                                Indonesia</p>
+                            <button class="btn-teal">Find Us</button>
+                        </div>
+                        <div class="info-card reveal-left">
+                            <span class="info-icon">💬</span>
+                            <h3>Talk to our expert</h3>
+                            <p>Mollis enim vivamus elementum convallis ultrices
+                                auctor fusce pharetra velit</p>
+                            <button class="btn-teal">Talk to Us</button>
+                        </div>
+                        <div class="info-card reveal-left">
+                            <span class="info-icon">🌐</span>
+                            <h3>Customer support</h3>
+                            <p>Ac in dignissim venenatis amet auctor ipsum sem
+                                lobortis lorem nec</p>
+                            <button class="btn-teal">Contact Support</button>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn-teal" style="width: auto; padding: 15px 40px;">Send Message</button>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
- </div>
 
- <!-- Grow CTA -->
-      <!-- CTA & FOOTER -->
-       <div class="cta_section animate-on-scroll ">
+            <!-- SECTION 3: MAP -->
+            <section class="map-section animate-on-scroll">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.546467490233!2d-0.12196172340320743!3d51.503186371812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1710000000000!5m2!1sen!2suk"
+                    allowfullscreen loading="lazy"></iframe>
+            </section>
+
+            <!-- SECTION 4: FORM SECTION -->
+            <div class="form_contact animate-on-scroll">
+                <div class="container">
+                    <div class="form-section">
+                        <div class="form-image reveal-left"></div>
+                        <div class="form-content reveal-right">
+                            <h2>Send us a message</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                            <form>
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Message</label>
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn-teal"
+                                    style="width: auto; padding: 15px 40px;">Send
+                                    Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grow CTA -->
+            <!-- CTA & FOOTER -->
+            <div class="cta_section animate-on-scroll ">
+                <div class="container">
+                    <div class="cta-box reveal-right">
+                        <h2>Grow your brand with Mark Next Media
+                        </h2>
+                        <p style="color:#cbd5e1; margin-bottom:30px;">Smart
+                            strategy. Clean design. Content that hits. Marketing
+                            that works.
+                        </p>
+                        <div class="button_book reveal-left">
+                            <a class="btn_Book">Book a Call
+                            </a>
+                            <a class="btn_start">Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      <footer>
         <div class="container">
-            <div class="cta-box reveal-right">
-                <h2>Grow your brand with Mark Next Media
-                </h2>
-                <p style="color:#cbd5e1; margin-bottom:30px;">Smart strategy. Clean design. Content that hits. Marketing
-                    that works.
-                </p>
-                <div class="button_book reveal-left">
-                    <a class="btn_Book">Book a Call
-                    </a>
-                    <a class="btn_start">Get Started
-                    </a>
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom:20px;">
+                        <img class="footer_logo" src="images/logo.png" />
+                    </div>
+                    <p>Mark Next Media is a creative-first digital agency
+                        built to help brands stand out online. From
+                        websites to social media to performance marketing,
+                        we turn ideas into digital impact.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Web Developing</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Send Ticket</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Article & News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="border-top:1px solid #222; padding-top:20px; display:flex; justify-content:space-between; color:#666; font-size:0.8rem;">
+                <p>Copyright © 2023 DigiBuzz. All rights reserved.</p>
+                <div class="footer_bottom">
+                    <a href="#" style="margin-right:15px;">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
-    </div>
- <footer>
-            <div class="container">
-                <div class="footer-grid">
-                    <div>
-                        <div class="logo" style="margin-bottom:20px;">
-                          <img class="footer_logo" src="images/logo.png"/>
-                        </div>
-                        <p>Mark Next Media is a creative-first digital agency built to help brands stand out online. From websites to social media to performance marketing, we turn ideas into digital impact.</p>
-                        <div class="socials">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-links">
-                        <h4>Service</h4>
-                        <ul>
-                            <li><a href="#">Digital Marketing</a></li>
-                            <li><a href="#">Web Developing</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links">
-                        <h4>Support</h4>
-                        <ul>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Send Ticket</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Article & News</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div
-                    style="border-top:1px solid #222; padding-top:20px; display:flex; justify-content:space-between; color:#666; font-size:0.8rem;">
-                    <p>Copyright © 2023 DigiBuzz. All rights reserved.</p>
-                    <div>
-                        <a href="#" style="margin-right:15px;">Terms of Use</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
 
+            <script src="script.js"></script>
 
-    <script src="script.js"></script>
-</body>
-</html>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+
+        </body>
+    </html>
