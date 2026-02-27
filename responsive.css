@@ -53,8 +53,7 @@
     }
 
     .glass-card {
-        width: 90%;
-        max-width: 900px;
+        width: 80%;
     }
 
     .glass-card h6 {
@@ -89,13 +88,26 @@
         padding-bottom: 0;
     }
 
+.srv-label{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.srv-h2 {
+    font-size: 38px;
+}
+.srv-intro-content p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.services_point li p{
+    font-size: 13px;
+}
 
 
-
-
-
-
-
+.why_choose_section{
+    padding: 60px 0;
+}
 
 
 
@@ -252,7 +264,7 @@
     }
 
     .glass-card h2 {
-        width: 95%;
+        width: 100%;
         margin: 40px auto;
         font-size: 30px;
     }
@@ -285,13 +297,31 @@
     }
 
 
+.glass-card h6 {
+        font-weight: 400;
+        font-size: 16px;
+    }
 
 
+.srv-h2 {
+        font-size: 30px;
+    }
+    .srv-label {
+        font-size: 14px;
+        font-weight: 500;
+    }
 
-
-
-
-
+    .srv-intro-content p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .services_point li p {
+        font-size: 12px;
+    }
+.srv-badge{
+    font-size: 18px;
+    font-weight: 600;
+}
 
 
 
@@ -604,12 +634,27 @@
     }
 
 
+.srv-intro-flex{
+    display: flex;
+    flex-wrap: wrap;
+     flex-direction: column;
+}
+.srv-intro-content.reveal-left.active-reveal.active{
+    width: 100%;
+}
+.srv-intro-image-area.reveal-right.active-reveal.active{
+    width: 100% ;
+}
 
-
-
-
-
-
+.srv-intro-img {
+    width: 100%;
+    border-radius: 15px;
+    height: 450px;
+    object-fit: cover;
+}
+.stats-grid{
+    bottom: -143px;
+}
 
 
 
@@ -905,20 +950,27 @@
 
     .team-info p {
         font-size: 13px;
-         font-weight: 400;
+        font-weight: 400;
     }
-.team_flex{
-    gap: 15px;
+
+    .team_flex {
+        gap: 15px;
+    }
+
+.hero-title{
+    height: 400px;
+ }
+    .services_point li p {
+        font-size: 14px;
+    }
+
+.we_offer_section .card h4 {
+    height: 42px;
 }
 
-
-
-
-
-
-
-
-
+.why_choose_section {
+        padding: 40px 0;
+    }
 
 
 
@@ -1057,15 +1109,20 @@
     .stat-item {
         border-right: 1px solid #fff;
         margin: 9px 0px 7px 0px;
-        padding: 0px 10px 0px 0px;
+        padding: 0px 5px 0px 6px;
     }
 
     .stat-item h3 {
-        font-size: 22px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 5px;
     }
 
     .stat-item p {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 400;
         padding-bottom: 0;
         margin-bottom: 25px;
@@ -1253,6 +1310,103 @@
     .footer_bottom {
         font-size: 11px;
     }
+
+    .glass-card h6 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .glass-card h2 {
+        width: 100%;
+        margin: 25px auto;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .glass-card {
+        padding: 23px 24px;
+    }
+
+    .about_section h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .about_contact h4 {
+        font-size: 16px;
+    }
+
+    .about_contact p {
+        margin-bottom: 0px;
+    }
+
+    .year-badge small {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .photo_text h5 {
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .text_top_values h2 {
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .text_top_values h4 {
+        font-size: 16px;
+    }
+
+    .values_section .value-card {
+        padding: 16px 12px;
+        width: 320px;
+    }
+
+    .value-card p {
+        font-weight: 300;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .team.container.inner_section {
+        margin-top: 0;
+    }
+
+    .team_flex {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .team_section h2 {
+        font-size: 22px;
+    }
+
+    .team-info h4 {
+        font-size: 20px;
+    }
+.inner_section{
+    padding: 50px 0;
+}
+
+.glass-card {
+        width: 90%;
+    }
+.srv-intro-flex {
+    align-items: center;
+    gap: 38px;
+    padding: 45px 0;
+}   
+.srv-intro-img{
+    height: auto;
+}
+
+
+
+
+
 
 
 

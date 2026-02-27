@@ -522,12 +522,13 @@ p {
 
 .we_offer_section .card h4 {
   font-size: 22px;
-margin: 10px 0;
+  margin: 10px 0;
   color: var(--white);
-    display: -webkit-box;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  height: 55px;
 }
 
 .we_offer_section .card p {
@@ -779,7 +780,13 @@ footer {
   border-radius: 10px;
   text-align: center;
   width: 80%;
-  max-width: 800px;
+}
+.glass-card h6{
+  font-size: 16px;
+  font-weight: 400;
+}
+.glass-card h2{
+  margin-top: 40px ;
 }
 
 .who-we-are {
@@ -1021,6 +1028,9 @@ letter-spacing: .5px;
   padding: 10px 22px;
 }
 
+.why_choose_section{
+    padding: 80px 0;
+}
 .why_choose_section .cards-grid {
   display: flex;
   justify-content: center;
@@ -1738,8 +1748,8 @@ pointer {
 
 .srv-label {
   color: #b4ff00;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 15px;
   display: block;
