@@ -573,8 +573,6 @@
         margin: 0;
     }
 
-    .footer-links ul li {}
-
     .footer-links ul li a {
         font-size: 12px;
         font-weight: 300;
@@ -656,8 +654,18 @@
     bottom: -143px;
 }
 
+  .mnm-offer-grid,
+  .mnm-port-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .mnm-ind-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .mnm-values-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 

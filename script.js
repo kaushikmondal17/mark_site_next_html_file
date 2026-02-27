@@ -180,6 +180,31 @@ document.querySelectorAll('.faq-pg-anim-left, .faq-pg-anim-right')
   .forEach(el => faqObserver.observe(el));
 
 
+// wesite_pagess
+
+
+
+    // --- SCROLL ANIMATION JAVASCRIPT ---
+    const mnmObserverOptions = { threshold: 0.15 };
+    const mnmObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('mnm-visible');
+            }
+        });
+    }, mnmObserverOptions);
+
+    document.querySelectorAll('.mnm-reveal-left, .mnm-reveal-right').forEach(el => {
+        mnmObserver.observe(el);
+    });
+
+    // --- FAQ ACCORDION JAVASCRIPT ---
+    document.querySelectorAll('.mnm-faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+            const item = q.parentElement;
+            item.classList.toggle('mnm-active');
+        });
+    });
 
 
 
