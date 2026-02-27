@@ -1,7 +1,5 @@
 @media (max-width: 1399.98px) {
 
-
-
     nav .wrapper {
         padding: 0;
     }
@@ -54,6 +52,48 @@
         margin-bottom: 20px;
     }
 
+    .glass-card {
+        width: 90%;
+        max-width: 900px;
+    }
+
+    .glass-card h6 {
+        font-weight: 500;
+    }
+
+    .glass-card h2 {
+        width: 80%;
+        margin: 40px auto;
+        font-size: 34px;
+    }
+
+    .about_contact h3 {
+        font-size: 34px;
+        padding: 10px 0;
+    }
+
+    .about_contact h4 {
+        font-size: 24px;
+    }
+
+    .text_top_values h2 {
+        font-size: 34px;
+    }
+
+    .value-card h3 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
+
+
+
+
+
+
 
 
 
@@ -91,6 +131,7 @@
         gap: 50px;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .we_offer_section .cards-grid {
@@ -206,6 +247,53 @@
         padding-bottom: 0;
     }
 
+    nav.navbar.navbar-expand-lg.bg-body-tertiary {
+        padding: 0;
+    }
+
+    .glass-card h2 {
+        width: 95%;
+        margin: 40px auto;
+        font-size: 30px;
+    }
+
+    .about_contact p {
+        margin-bottom: 15px;
+    }
+
+    .about_section {
+        padding-bottom: 80px;
+    }
+
+    .value-card p {
+        font-weight: 400;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .team-info h4 {
+        font-size: 24px;
+    }
+
+    .team h6 {
+        font-size: 13px;
+    }
+
+    .team-info p {
+        font-size: 16px;
+        margin: 10px auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -218,9 +306,6 @@
 }
 
 @media (max-width: 991.98px) {
-
-
-
 
     .green-split {
         overflow: hidden !important;
@@ -260,7 +345,9 @@
     }
 
     .about_section h3 {
-        font-size: 26px;
+        font-size: 29px;
+        padding-bottom: 0;
+        margin-bottom: 15px
     }
 
     .about_contact p {
@@ -479,13 +566,57 @@
     }
 
 
+    .glass-card {
+        padding: 40px 25px;
+    }
+
+    .glass-card h6 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .glass-card p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .badge {
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+
+    .text_top_values h2 {
+        font-size: 30px;
+    }
+
+    .text_top_values h4 {
+        font-size: 18px;
+    }
+
+    .value-card {
+        padding: 24px 14px;
+    }
+
+    .team.container.inner_section {
+        margin-top: 118px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 }
 
 
 @media (max-width: 767.98px) {
-
-
 
 
     .animate-on-scroll {
@@ -579,7 +710,7 @@
     }
 
     .about_section h3 {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 500;
     }
 
@@ -651,12 +782,15 @@
         width: auto;
         margin: 3px auto;
     }
-.green-content {
-    padding: 46px;
-}
+
+    .green-content {
+        padding: 46px;
+    }
+
     .green-split h3 {
         font-size: 20px;
     }
+
     .green-split ul h4 {
         font-size: 16px;
     }
@@ -664,10 +798,117 @@
     .green-split ul p {
         font-size: 12px !important;
     }
-.feature-list li {
-    margin-bottom: 20px;
-    gap: 12px;
-    padding: 12px 10px;
+
+    .feature-list li {
+        margin-bottom: 20px;
+        gap: 12px;
+        padding: 12px 10px;
+    }
+
+    .how_it_work_section h2 {
+        font-size: 22px;
+        margin-bottom: 28px;
+    }
+
+    .cards-grid {
+        flex-wrap: wrap;
+    }
+
+    .process-card h4 {
+        margin-top: 0;
+    }
+
+    .why_choose_section h2 {
+        font-size: 21px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .why_choose_section .wide-card {
+        padding: 12px 16px;
+        gap: 14px;
+        width: 450px;
+        height: auto;
+    }
+
+    .help_section .card {
+        text-align: center;
+    }
+
+    .cta-box h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .cta-box p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 68px;
+    }
+
+    .glass-card {
+        padding: 30px 25px;
+    }
+
+    .glass-card h2 {
+        width: 100%;
+        margin: 32px auto;
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .glass-card p {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .about_contact h4 {
+        font-size: 18px;
+    }
+
+    .values_section .grid-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .value-card {
+        padding: 17px 23px;
+        height: auto;
+    }
+
+    .team_section h2 {
+        font-size: 26px;
+    }
+
+    .team-card img {
+        width: 100%;
+        height: 190px;
+    }
+
+    .team-info h4 {
+        font-size: 18px;
+    }
+
+    .team h6 {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .team-info p {
+        font-size: 13px;
+         font-weight: 400;
+    }
+.team_flex{
+    gap: 15px;
 }
 
 
@@ -688,6 +929,334 @@
 
 
 
+}
+
+@media (max-width: 575.98px) {
+
+    /* ========== Base Animation Setup ========== */
+    .animate-on-scroll,
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+        opacity: 0;
+        transition: transform 0.8s ease, opacity 0.8s ease;
+        will-change: transform, opacity;
+    }
+
+    /* Bottom Reveal */
+    .animate-on-scroll,
+    .reveal {
+        transform: translateY(40px);
+    }
+
+    /* Left Reveal */
+    .reveal-left {
+        transform: translateX(-40px);
+    }
+
+    /* Right Reveal */
+    .reveal-right {
+        transform: translateX(40px);
+    }
+
+    /* Active State */
+    .active-scroll,
+    .active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+
+
+    nav.navbar.navbar-expand-lg.bg-body-tertiary {
+        padding: 0;
+    }
+
+    .logo img {
+        width: auto;
+        height: 48px;
+    }
+
+    .hero {
+        height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+        max-width: 319px;
+        margin: 0 auto 20px;
+        padding: 15px 0;
+    }
+
+    .hero p {
+        width: 95%;
+        font-size: 13px;
+    }
+
+    .hero-btns {
+        margin-top: 18px;
+        display: flex;
+        gap: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: var(----font-para);
+    }
+
+    .hero .btn {
+        display: block;
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: 300;
+        padding: 7px 24px;
+        font-family: var(----font-para);
+    }
+
+    .btn-outline {
+        font-family: var(----font-para);
+        border: 1px solid #fff;
+    }
+
+    .logos-section p {
+        font-size: 13px;
+        width: 94%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .logos-grid span {
+        font-size: 13px;
+        background-color: #ffffff59;
+        padding: 8px 17px;
+        border-radius: 5px;
+    }
+
+    .logos-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .year-badge {
+        top: -27px;
+        right: 33px;
+        padding: 11px 10px;
+        border-radius: 12px;
+        width: 171px;
+        height: 70px;
+    }
+
+    .image-wrapper::after {
+        opacity: .8;
+    }
+
+    .stats-section h2 {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .stat-item {
+        border-right: 1px solid #fff;
+        margin: 9px 0px 7px 0px;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .stat-item h3 {
+        font-size: 22px;
+    }
+
+    .stat-item p {
+        font-size: 13px;
+        font-weight: 400;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+    }
+
+    .stats-grid {
+        bottom: -131px;
+    }
+
+    .badge {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .we_offer_section .card {
+        width: auto;
+        padding: 22px 18px;
+    }
+
+    .we_offer_section .card p {
+        font-size: 13px;
+        font-weight: 300;
+        margin: 12px 0;
+    }
+
+    .we_offer_section .card h4 {
+        font-size: 18px;
+        padding: 4px 0;
+        margin-bottom: 0;
+    }
+
+    .services_card_images {
+        height: 60px;
+    }
+
+    .green-content {
+        padding: 52px 28px;
+    }
+
+    .green-split ul h4 {
+        font-size: 19px;
+    }
+
+    .green-split ul p {
+        font-size: 14px !important;
+        line-height: 17px;
+        padding: 6px 0;
+    }
+
+    .process-card p {
+        font-size: 13px;
+    }
+
+    .process-card {
+        padding: 21px 22px;
+    }
+
+    .process-card i {
+        margin: 10px auto;
+        font-size: 35px;
+    }
+
+    .how_it_work_section a {
+        font-size: 12px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 8px 15px;
+        width: 40%;
+    }
+
+    .why_choose_section h2 {
+        font-size: 22px;
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .wide-card-content p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    .why_choose_section .wide-card {
+        padding: 16px 20px;
+        gap: 20px;
+        width: 450px;
+        height: auto;
+    }
+
+    .wide-card-content h4 {
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+
+    .help_section h2 {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .help_section .card h4 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .help_section .card p {
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin: 5px auto;
+    }
+
+    .help_section .card a {
+        font-size: 10px;
+        padding: 10px 12px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-weight: 300;
+        font-family: var(----font-para);
+    }
+
+    .cta-box {
+        padding: 40px 13px;
+        border-radius: 20px;
+        margin-bottom: -56px;
+    }
+
+    .footer-grid p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .footer-links ul li a {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .bottom_footer_part {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 0;
+        align-items: center;
+        justify-content: center !important;
+        gap: 2px;
+        padding: 10px 20px !important;
+    }
+
+    .bottom_footer_part p {
+        margin-bottom: 3px;
+        font-size: 11px;
+    }
+
+    .footer_bottom a {
+        font-size: 11px;
+    }
+
+    .footer-links h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 2px;
+    }
+
+    .footer-grid {
+        gap: 20px;
+    }
+
+    .footer_bottom {
+        font-size: 11px;
+    }
+
+
+
+
 
 
 
@@ -695,5 +1264,3 @@
 
 
 }
-
-@media (max-width: 575.98px) {}
