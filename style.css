@@ -82,10 +82,8 @@ body {
   overflow-x: hidden !important;
 }
 
-button {}
-
 :root {
-  --primary: #0ea5e9;
+  --primary: #172065;
   --white: #fff;
   --secondary: #10b981;
   --dark-bg: #111827;
@@ -97,7 +95,6 @@ button {}
   --body-font: "Roboto", sans-serif;
   --font-para: "Jost", sans-serif;
 }
-
 
 h3 {
   font-size: 38px;
@@ -271,7 +268,10 @@ p {
   padding: 80px 0;
   text-align: center;
 }
-
+.footer-links ul{
+   margin: 0;
+   padding: 0;
+}
 .footer {
   padding: 60px 0;
   background: #0b0d18;
