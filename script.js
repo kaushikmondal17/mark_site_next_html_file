@@ -207,4 +207,12 @@ document.querySelectorAll('.faq-pg-anim-left, .faq-pg-anim-right')
     });
 
 
+// fsq searcnh page
 
+  document.querySelectorAll('.seo-pg-faq-q').forEach(q => {
+        q.addEventListener('click', () => {
+            const item = q.parentElement;
+            item.classList.toggle('seo-active');
+            q.querySelector('span').innerText = item.classList.contains('seo-active') ? '-' : '+';
+        });
+    });
