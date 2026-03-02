@@ -232,7 +232,39 @@ document.querySelectorAll('.faq-pg-anim-left, .faq-pg-anim-right')
 
 
 
+   // --- Scroll Reveal Logic ---
+    const tmObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('tm-active');
+            }
+        });
+    }, { threshold: 0.1 });
 
+    document.querySelectorAll('.tm-reveal-up, .tm-reveal-left, .tm-reveal-right').forEach(el => {
+        tmObserver.observe(el);
+    });
+
+    // --- Video Modal Logic ---
+    function openTmVideo(url) {
+        document.getElementById('tmVideoFrame').src = url;
+        document.getElementById('tmVideoModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Stop scrolling
+    }
+
+    function closeTmVideo() {
+        document.getElementById('tmVideoFrame').src = '';
+        document.getElementById('tmVideoModal').style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+
+    // Close modal if clicking outside the video
+    window.onclick = function(event) {
+        let modal = document.getElementById('tmVideoModal');
+        if (event.target == modal) {
+            closeTmVideo();
+        }
+    }
 
 
 

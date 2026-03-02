@@ -3066,3 +3066,202 @@ pointer {
 .mail_content {
   cursor: pointer;
 }
+
+
+
+.tm-wrapper {
+            background-color: #0b0e13;
+            color: #ffffff;
+            font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .tm-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- ANIMATIONS --- */
+        .tm-reveal-up { opacity: 0; transform: translateY(50px); transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1); }
+        .tm-reveal-left { opacity: 0; transform: translateX(-80px); transition: all 1s ease; }
+        .tm-reveal-right { opacity: 0; transform: translateX(80px); transition: all 1s ease; }
+        .tm-active { opacity: 1 !important; transform: translate(0, 0) !important; }
+
+        /* --- HERO SECTION --- */
+        .tm-hero {
+            padding: 100px 0 60px;
+            text-align: center;
+            background: radial-gradient(circle at top right, #004d5533, transparent);
+        }
+        .tm-hero-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            padding: 60px 40px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .tm-tag { color: #b4ff00; font-weight: 800; letter-spacing: 4px; font-size: 14px; margin-bottom: 20px; display: block; text-transform: uppercase; }
+        .tm-hero h1 { font-size: 3.5rem; font-weight: 900; margin-bottom: 20px; background: linear-gradient(to right, #fff, #008fa1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        /* --- VIDEO GRID --- */
+        .tm-video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+
+        .tm-video-card {
+            background: #161b22;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .tm-video-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            border-color: #b4ff00;
+            box-shadow: 0 20px 40px rgba(180, 255, 0, 0.15);
+        }
+
+        /* Video Thumbnail Area */
+        .tm-thumb-wrap {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            background: #000;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .tm-thumb-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        .tm-video-card:hover .tm-thumb-wrap img {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        /* Play Button Pulse Animation */
+        .tm-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: #008fa1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            box-shadow: 0 0 0 0 rgba(0, 143, 161, 0.7);
+            animation: tm-pulse 2s infinite;
+        }
+
+        .tm-play-btn::after {
+            content: '';
+            width: 0; height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid white;
+            margin-left: 5px;
+        }
+
+        @keyframes tm-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 143, 161, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(0, 143, 161, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 143, 161, 0); }
+        }
+
+        .tm-card-info { padding: 25px; }
+        .tm-card-info h3 { margin: 0 0 5px 0; color: #fff; font-size: 1.2rem; }
+        .tm-card-info p { color: #b4ff00; font-size: 0.85rem; font-weight: bold; margin-bottom: 15px; }
+        .tm-quote { color: #a0a0a0; font-style: italic; font-size: 0.9rem; }
+
+        /* --- TEXT TESTIMONIALS SLIDER TYPE --- */
+        .tm-text-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .tm-text-card {
+            background: rgba(255,255,255,0.02);
+            padding: 40px;
+            border-radius: 20px;
+            border-left: 5px solid #008fa1;
+            position: relative;
+        }
+
+        .tm-text-card::before {
+            content: "“";
+            position: absolute;
+            top: 10px; right: 30px;
+            font-size: 80px;
+            color: rgba(180, 255, 0, 0.1);
+            font-family: serif;
+        }
+
+        /* --- VIDEO MODAL --- */
+        .tm-modal {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .tm-modal-content {
+            width: 80%;
+            max-width: 900px;
+            aspect-ratio: 16/9;
+            background: #000;
+            border: 2px solid #b4ff00;
+        }
+
+        .tm-close-modal {
+            position: absolute;
+            top: 30px; right: 40px;
+            color: #fff; font-size: 40px; cursor: pointer;
+        }
+
+        /* --- FINAL CTA --- */
+        .tm-cta {
+            text-align: center;
+            padding: 100px 0;
+            background: radial-gradient(circle, #003a40, #0b0e13);
+            border-radius: 40px;
+            margin: 80px 0;
+        }
+
+        .tm-btn-lime {
+            background: #b4ff00; color: #000;
+            padding: 15px 40px; border-radius: 5px;
+            text-decoration: none; font-weight: bold;
+            display: inline-block; transition: 0.3s;
+        }
+        .tm-btn-lime:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(180, 255, 0, 0.4); }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .tm-hero h1 { font-size: 2.2rem; }
+            .tm-text-grid { grid-template-columns: 1fr; }
+            .tm-video-grid { grid-template-columns: 1fr; }
+        }
