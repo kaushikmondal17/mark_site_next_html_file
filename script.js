@@ -216,3 +216,25 @@ document.querySelectorAll('.faq-pg-anim-left, .faq-pg-anim-right')
             q.querySelector('span').innerText = item.classList.contains('seo-active') ? '-' : '+';
         });
     });
+
+  // --- Scroll Reveal Logic ---
+    const ppObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('pp-pg-active');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.pp-pg-reveal-left, .pp-pg-reveal-right, .pp-pg-reveal-up').forEach(el => {
+        ppObserver.observe(el);
+    });
+
+
+
+
+
+
+
+
+
