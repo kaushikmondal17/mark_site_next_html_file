@@ -191,6 +191,11 @@ p {
   padding: 100px 0;
 }
 
+.inner_section .top_heading {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+}
 
 .hero {
   height: 90vh;
@@ -2340,8 +2345,6 @@ pointer {
   overflow: hidden !important;
 }
 
-/* inner_html */
-
 /* --- SCOPED CSS FOR MARK NEXT MEDIA --- */
 .mnm-wrapper {
   background-color: #0b0e13;
@@ -2357,6 +2360,13 @@ pointer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.mnm-container h6 {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* Animation States */
@@ -2868,7 +2878,7 @@ pointer {
 .pp-pg-hero {
   padding: 100px 0 60px;
   text-align: center;
-    background: radial-gradient(circle at top, #172065, transparent);
+  background: radial-gradient(circle at top, #172065, transparent);
 }
 
 .pp-pg-hero-card {
@@ -2897,13 +2907,14 @@ pointer {
 
 /* --- CONTENT CARD STYLE --- */
 .pp-pg-section {
-    padding: 19px 62px;
+  padding: 19px 62px;
 }
 
-.top_pp_section{
+.top_pp_section {
   padding: 40px;
   background: #8b9eb7;
 }
+
 .pp-pg-card {
   padding: 20px 80px;
   border-radius: 20px;
@@ -3020,32 +3031,38 @@ pointer {
 .pp-pg-item span {
   color: #a0a0a0;
 }
-.thirt_section{
+
+.thirt_section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
-.pp_ul{
+
+.pp_ul {
   list-style: unset;
-    margin: 0;
-    padding: 10px 10px;
+  margin: 0;
+  padding: 10px 10px;
 }
-.pp_ul li p{
+
+.pp_ul li p {
   font-size: 16px;
   font-weight: 400;
 }
+
 .pp-pg-card p {
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0;
-    padding: 4px 12px;
-    text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 4px 12px;
+  text-align: start;
 }
-.pp_content_section{
- width: 80%;
- margin: 20px auto;
+
+.pp_content_section {
+  width: 80%;
+  margin: 20px auto;
 }
-.mail_content{
+
+.mail_content {
   cursor: pointer;
 }
