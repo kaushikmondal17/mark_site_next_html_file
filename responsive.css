@@ -57,13 +57,14 @@
     }
 
     .glass-card h6 {
-        font-weight: 500;
+        font-weight: 400;
+        font-size: 16px;
     }
 
     .glass-card h2 {
         width: 80%;
         margin: 40px auto;
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .about_contact h3 {
@@ -88,26 +89,53 @@
         padding-bottom: 0;
     }
 
-.srv-label{
-    font-size: 14px;
-    font-weight: 500;
-}
+    .srv-label {
+        font-size: 14px;
+        font-weight: 500;
+    }
 
-.srv-h2 {
-    font-size: 38px;
-}
-.srv-intro-content p{
-    font-size: 16px;
-    font-weight: 400;
-}
-.services_point li p{
-    font-size: 13px;
-}
+    .srv-h2 {
+        font-size: 38px;
+    }
+
+    .srv-intro-content p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .services_point li p {
+        font-size: 13px;
+    }
 
 
-.why_choose_section{
-    padding: 60px 0;
-}
+    .why_choose_section {
+        padding: 60px 0;
+    }
+
+    .indus_card .content_box {
+        bottom: -135px;
+    }
+
+    .indus_card .content_box h4 {
+        font-size: 20px;
+        font-weight: 300;
+        /* margin: 38px auto; */
+        margin-bottom: 53px;
+    }
+
+    .mnm-port-img {
+        height: 270px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,13 +145,23 @@
 @media (max-width: 1199.98px) {
 
     .nav-links li a {
-        font-size: 16px;
+        font-size: 15px;
         padding: 0px 8px;
     }
 
-    .logo img {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    header .logo img {
         width: auto;
-        height: 60px;
+        height: 50px;
+    }
+
+    .header_button {
+        padding: 6px 23px;
+        font-size: 15px;
     }
 
     .hero h1 {
@@ -297,15 +335,16 @@
     }
 
 
-.glass-card h6 {
+    .glass-card h6 {
         font-weight: 400;
         font-size: 16px;
     }
 
 
-.srv-h2 {
+    .srv-h2 {
         font-size: 30px;
     }
+
     .srv-label {
         font-size: 14px;
         font-weight: 500;
@@ -315,27 +354,123 @@
         font-size: 14px;
         font-weight: 400;
     }
+
     .services_point li p {
         font-size: 12px;
     }
-.srv-badge{
-    font-size: 18px;
-    font-weight: 600;
-}
 
+    .srv-badge {
+        font-size: 18px;
+        font-weight: 600;
+    }
 
+    .pp-pg-hero h2 {
+        font-size: 36px;
+    }
 
+    .pp-pg-hero p {
+        font-size: 16px;
+    }
 
+    .top_pp_section {
+        padding: 40px 0px;
+    }
 
+    .pp-pg-card h3 {
+        font-size: 24px;
+    }
 
+    .pp-pg-card p {
+        font-size: 16px;
+    }
 
+    .pp-pg-list-box h4 {
+        font-size: 22px;
+    }
 
+    .pp-pg-card h2 {
+        font-size: 24px;
+    }
 
+    .pp-pg-card {
+        padding: 20px 47px;
+        margin-bottom: 20px;
+    }
 
+    .info-card h3 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .info-card h2 {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .form-content {
+        flex: 1;
+        padding: 30px;
+    }
+
+    .form-section h4 {
+        font-size: 14px;
+    }
+
+    .form-content p {
+        font-size: 14px;
+    }
+
+    .glass-card h2 {
+        width: 100%;
+        margin: 40px auto;
+        font-size: 27px;
+    }
+
+    .glass-card {
+        width: 90%;
+    }
+
+    .mnm-value-item h2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .mnm-value-item p {
+        font-size: 15px;
+    }
+
+    .mnm-logo-scroller .top_heading {
+        width: 90%;
+    }
+
+    .mnm-offer-card h3 {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 10px auto;
+    }
+
+    .mnm-offer-card {
+        background: #161b22;
+        padding: 30px 22px;
+    }
+
+    .indus_card .content_box {
+        bottom: -166px;
+    }
+
+    .mnm-port-img {
+        height: 236px;
+    }
 
 }
 
 @media (max-width: 991.98px) {
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 14px;
+    }
 
     .green-split {
         overflow: hidden !important;
@@ -632,40 +767,160 @@
     }
 
 
-.srv-intro-flex{
-    display: flex;
-    flex-wrap: wrap;
-     flex-direction: column;
-}
-.srv-intro-content.reveal-left.active-reveal.active{
-    width: 100%;
-}
-.srv-intro-image-area.reveal-right.active-reveal.active{
-    width: 100% ;
-}
+    .srv-intro-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
-.srv-intro-img {
-    width: 100%;
-    border-radius: 15px;
-    height: 450px;
-    object-fit: cover;
-}
-.stats-grid{
-    bottom: -143px;
-}
+    .srv-intro-content.reveal-left.active-reveal.active {
+        width: 100%;
+    }
 
-  .mnm-offer-grid,
-  .mnm-port-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .srv-intro-image-area.reveal-right.active-reveal.active {
+        width: 100%;
+    }
 
-  .mnm-ind-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .srv-intro-img {
+        width: 100%;
+        border-radius: 15px;
+        height: 450px;
+        object-fit: cover;
+    }
 
-  .mnm-values-grid {
-    grid-template-columns: 1fr;
-  }
+    .stats-grid {
+        bottom: -143px;
+    }
+
+    .mnm-offer-grid,
+    .mnm-port-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mnm-ind-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mnm-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pp-pg-hero h2 {
+        font-size: 40px;
+    }
+
+    .top_pp_section {
+        padding: 31px 0px;
+    }
+
+    .pp-pg-card {
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+
+    .pp-pg-list-box h4 {
+        font-size: 16px;
+        padding-bottom: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .thirt_section {
+        flex-wrap: wrap;
+    }
+
+    .pp-pg-section .pp-pg-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pp-pg-card h6 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        font-weight: 400;
+
+    }
+
+    .contact-hero .hero-card h1 {
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+
+    .contact-hero .hero-card p {
+        font-size: 14px;
+    }
+
+    .info-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .form-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-content {
+        flex: auto;
+    }
+
+    .glass-card h6 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .glass-card h2 {
+        margin: 40px auto;
+        font-size: 24px;
+    }
+
+    .glass-card p {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .mnm-logo-scroller .top_heading p {
+        font-size: 14px;
+        margin: 5px auto;
+    }
+
+    .mnm-container h6 {
+        font-size: 14px;
+    }
+
+    .mnm-section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 26px;
+    }
+
+    .mnm-container {
+        height: fit-content;
+    }
+
+    .inner_section {
+        padding: 62px 0;
+    }
+
+    .mnm-port-img {
+        height: 236px;
+    }
+
+
+
+
+
+
+
+
 }
 
 
@@ -965,21 +1220,86 @@
         gap: 15px;
     }
 
-.hero-title{
-    height: 400px;
- }
+    .hero-title {
+        height: fit-content;
+    }
+
     .services_point li p {
         font-size: 14px;
     }
 
-.we_offer_section .card h4 {
-    height: 42px;
-}
+    .we_offer_section .card h4 {
+        height: 42px;
+    }
 
-.why_choose_section {
+    .why_choose_section {
         padding: 40px 0;
     }
 
+    .pp-pg-list-box {
+        width: 100%;
+    }
+
+    .glass-card h6 {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .glass-card h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .mnm-value-item p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .mnm-logo-scroller .top_heading h2 {
+        font-size: 22px;
+    }
+
+    .mnm-logo-scroller .top_heading p {
+        font-size: 14px;
+        margin: 3px auto;
+    }
+
+    .mnm-logo-track span {
+        display: inline-block;
+        margin: 35px 18px;
+        font-size: 17px;
+        color: #444;
+    }
+
+    .mnm-offer-card h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px auto;
+    }
+
+    .mnm-offer-card p {
+        color: #a0a0a0;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .mnm-container {
+        padding: 16px 30px !important;
+    }
+
+    .inner_section .top_heading h2 {
+        font-size: 24px;
+    }
+
+    .indus_card img {
+        width: 100%;
+        height: 292px;
+        object-fit: cover;
+    }
+
+    .indus_card .content_box {
+        bottom: -135px;
+    }
 
 
 
@@ -1395,30 +1715,136 @@
     .team-info h4 {
         font-size: 20px;
     }
-.inner_section{
-    padding: 50px 0;
-}
 
-.glass-card {
+    .inner_section {
+        padding: 50px 0;
+    }
+
+    .glass-card {
         width: 90%;
     }
-.srv-intro-flex {
-    align-items: center;
-    gap: 38px;
-    padding: 45px 0;
-}   
-.srv-intro-img{
-    height: auto;
-}
 
+    .srv-intro-flex {
+        align-items: center;
+        gap: 38px;
+        padding: 45px 0;
+    }
 
+    .srv-intro-img {
+        height: auto;
+    }
 
+    .pp-pg-hero h2 {
+        font-size: 28px;
+    }
 
+    .pp-pg-hero p {
+        font-size: 13px;
+    }
 
+    .pp-pg-hero-card {
+        padding: 36px 24px;
+        border-radius: 15px;
+    }
 
+    .pp-pg-card h3 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
 
+    .pp-pg-section {
+        padding: 1px 19px;
+    }
 
+    .pp-pg-card h2 {
+        font-size: 18px;
+    }
 
+    .pp_ul li p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .pp-pg-card {
+        padding: 20px 20px;
+        margin-bottom: 4px;
+    }
+
+    .pp-pg-card h6 {
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        margin: 10px auto;
+        font-weight: 300;
+        font-size: 14px;
+        color: #dcc0c0;
+    }
+
+    .glass-card h2 {
+        font-size: 16px;
+    }
+
+    .glass-card p {
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    .mnm-value-item h2 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .mnm-value-item p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .mnm-logo-scroller .top_heading h2 {
+        font-size: 18px;
+    }
+
+    .mnm-logo-scroller .top_heading {
+        width: 95%;
+    }
+
+    .mnm-section-title {
+        font-size: 20px;
+    }
+
+    .mnm-container h6 {
+        font-size: 12px;
+    }
+
+    .mnm-offer-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inner_section .top_heading h2 {
+        font-size: 20px;
+    }
+
+    .indus_card .content_box {
+        bottom: -100px;
+    }
+
+    .mnm-portfolio-area {
+        padding: 38px 0;
+    }
+
+    .mnm-port-img {
+        height: 250px;
+    }
+
+    .mnm-faq-question {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .mnm-faq-item.mnm-active .mnm-faq-answer {
+        font-size: 13px;
+    }
 
 
 
